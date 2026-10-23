@@ -1,0 +1,543 @@
+{
+  "approved": [
+    {
+      "reason": "Capital One core and all subdomains; both upstream banking lists",
+      "rule": "DOMAIN-SUFFIX,capitalone.com"
+    },
+    {
+      "reason": "Capital One 360 legacy/login namespace; missuo bank inventory; retained for coverage, not an endorsement of current service availability",
+      "rule": "DOMAIN-SUFFIX,capitalone360.com"
+    },
+    {
+      "reason": "Chase core/login namespace; both upstreams",
+      "rule": "DOMAIN-SUFFIX,chase.com"
+    },
+    {
+      "reason": "JPMorgan Chase corporate and banking namespace; both upstreams",
+      "rule": "DOMAIN-SUFFIX,jpmorganchase.com"
+    },
+    {
+      "reason": "JPMorgan institutional and banking services; missuo",
+      "rule": "DOMAIN-SUFFIX,jpmorgan.com"
+    },
+    {
+      "reason": "Chase merchant banking/payments; missuo",
+      "rule": "DOMAIN-SUFFIX,chasepaymentech.com"
+    },
+    {
+      "reason": "Bank of America core and login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,bankofamerica.com"
+    },
+    {
+      "reason": "Bank of America related namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,bofa.com"
+    },
+    {
+      "reason": "Bank of America related namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,bac.com"
+    },
+    {
+      "reason": "Bank of America Merrill Lynch services; missuo",
+      "rule": "DOMAIN-SUFFIX,baml.com"
+    },
+    {
+      "reason": "Bank-related Merrill account and investment services; missuo; global scope accepted",
+      "rule": "DOMAIN-SUFFIX,ml.com"
+    },
+    {
+      "reason": "Merrill Edge accounts; missuo",
+      "rule": "DOMAIN-SUFFIX,merrilledge.com"
+    },
+    {
+      "reason": "Wells Fargo core/login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,wellsfargo.com"
+    },
+    {
+      "reason": "Wells Fargo Advisors accounts; missuo",
+      "rule": "DOMAIN-SUFFIX,wellsfargoadvisors.com"
+    },
+    {
+      "reason": "Wells Fargo related namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,wf.com"
+    },
+    {
+      "reason": "Citi core/login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,citi.com"
+    },
+    {
+      "reason": "Citibank core namespace; both upstreams; international subdomains also match",
+      "rule": "DOMAIN-SUFFIX,citibank.com"
+    },
+    {
+      "reason": "Citi group namespace; both upstreams",
+      "rule": "DOMAIN-SUFFIX,citigroup.com"
+    },
+    {
+      "reason": "Citi online banking; official terms https://online.citi.com/US/JRS/reg/ShowTandC.do and missuo",
+      "rule": "DOMAIN-SUFFIX,citibankonline.com"
+    },
+    {
+      "reason": "Citi card namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,citicards.com"
+    },
+    {
+      "reason": "Citi institutional online services; missuo",
+      "rule": "DOMAIN-SUFFIX,citidirect.com"
+    },
+    {
+      "reason": "American Express core and application/login subdomains; both upstreams; includes international subdomains",
+      "rule": "DOMAIN-SUFFIX,americanexpress.com"
+    },
+    {
+      "reason": "American Express alias/product namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,amex.com"
+    },
+    {
+      "reason": "American Express travel accounts and rewards; missuo",
+      "rule": "DOMAIN-SUFFIX,amextravel.com"
+    },
+    {
+      "reason": "Amex-related prepaid account services; missuo historical coverage, availability not guaranteed",
+      "rule": "DOMAIN-SUFFIX,serve.com"
+    },
+    {
+      "reason": "Amex dedicated web assets; missuo and Cisco incident https://community.cisco.com/t5/umbrella-announcements/americanexpress-com-access-denied-message-for-umbrella-swg/ta-p/5286721",
+      "rule": "DOMAIN-SUFFIX,aexp-static.com"
+    },
+    {
+      "reason": "Discover core account services; both upstreams",
+      "rule": "DOMAIN-SUFFIX,discover.com"
+    },
+    {
+      "reason": "Discover card accounts; missuo",
+      "rule": "DOMAIN-SUFFIX,discovercard.com"
+    },
+    {
+      "reason": "Discover bank accounts; missuo",
+      "rule": "DOMAIN-SUFFIX,discoverbank.com"
+    },
+    {
+      "reason": "Discover card product; missuo",
+      "rule": "DOMAIN-SUFFIX,discoverit.com"
+    },
+    {
+      "reason": "Discover loan servicing; missuo",
+      "rule": "DOMAIN-SUFFIX,discoverpersonalloans.com"
+    },
+    {
+      "reason": "Discover business products; missuo",
+      "rule": "DOMAIN-SUFFIX,discoverbiz.com"
+    },
+    {
+      "reason": "US Bank core/login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,usbank.com"
+    },
+    {
+      "reason": "US Bank ReliaCard servicing; missuo",
+      "rule": "DOMAIN-SUFFIX,usbankreliacard.com"
+    },
+    {
+      "reason": "PNC core/login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,pnc.com"
+    },
+    {
+      "reason": "PNC prepaid servicing; missuo",
+      "rule": "DOMAIN-SUFFIX,pncprepaidcard.com"
+    },
+    {
+      "reason": "PNC paycard servicing; missuo",
+      "rule": "DOMAIN-SUFFIX,pncpaycard.com"
+    },
+    {
+      "reason": "Truist core/login; both upstreams",
+      "rule": "DOMAIN-SUFFIX,truist.com"
+    },
+    {
+      "reason": "Legacy Truist/BBT namespace; missuo retained for transitions",
+      "rule": "DOMAIN-SUFFIX,bbt.com"
+    },
+    {
+      "reason": "Legacy SunTrust namespace; missuo retained for transitions",
+      "rule": "DOMAIN-SUFFIX,suntrust.com"
+    },
+    {
+      "reason": "TD Bank US; missuo",
+      "rule": "DOMAIN-SUFFIX,tdbank.com"
+    },
+    {
+      "reason": "TD accounts; missuo; Canadian/non-US traffic also matches",
+      "rule": "DOMAIN-SUFFIX,td.com"
+    },
+    {
+      "reason": "TD commercial banking; missuo",
+      "rule": "DOMAIN-SUFFIX,tdcommercialbanking.com"
+    },
+    {
+      "reason": "Marcus banking; missuo",
+      "rule": "DOMAIN-SUFFIX,marcus.com"
+    },
+    {
+      "reason": "Goldman Sachs account services; both upstreams",
+      "rule": "DOMAIN-SUFFIX,goldmansachs.com"
+    },
+    {
+      "reason": "Ally banking; both upstreams",
+      "rule": "DOMAIN-SUFFIX,ally.com"
+    },
+    {
+      "reason": "Fifth Third banking; both upstreams",
+      "rule": "DOMAIN-SUFFIX,53.com"
+    },
+    {
+      "reason": "Citizens banking; both upstreams",
+      "rule": "DOMAIN-SUFFIX,citizensbank.com"
+    },
+    {
+      "reason": "Citizens online banking; missuo",
+      "rule": "DOMAIN-SUFFIX,citizensbankonline.com"
+    },
+    {
+      "reason": "Citizens Access banking; missuo",
+      "rule": "DOMAIN-SUFFIX,citizensaccess.com"
+    },
+    {
+      "reason": "KeyBank; both upstreams",
+      "rule": "DOMAIN-SUFFIX,key.com"
+    },
+    {
+      "reason": "Regions banking; both upstreams",
+      "rule": "DOMAIN-SUFFIX,regions.com"
+    },
+    {
+      "reason": "Huntington banking; both upstreams",
+      "rule": "DOMAIN-SUFFIX,huntington.com"
+    },
+    {
+      "reason": "M&T Bank; both upstreams",
+      "rule": "DOMAIN-SUFFIX,mtb.com"
+    },
+    {
+      "reason": "USAA accounts; missuo; insurance/account traffic also matches",
+      "rule": "DOMAIN-SUFFIX,usaa.com"
+    },
+    {
+      "reason": "BMO Harris legacy banking namespace; missuo",
+      "rule": "DOMAIN-SUFFIX,bmoharris.com"
+    },
+    {
+      "reason": "BMO accounts; missuo; international traffic also matches",
+      "rule": "DOMAIN-SUFFIX,bmo.com"
+    },
+    {
+      "reason": "SoFi banking and related financial accounts; missuo",
+      "rule": "DOMAIN-SUFFIX,sofi.com"
+    },
+    {
+      "reason": "Synchrony banking; Accademia",
+      "rule": "DOMAIN-SUFFIX,synchronybank.com"
+    },
+    {
+      "reason": "Cathay Bank; Accademia",
+      "rule": "DOMAIN-SUFFIX,cathaybank.com"
+    },
+    {
+      "reason": "Varo bank accounts; both upstreams",
+      "rule": "DOMAIN-SUFFIX,varomoney.com"
+    },
+    {
+      "reason": "Velo by East West Bank; Accademia and https://www.velobank.com/",
+      "rule": "DOMAIN-SUFFIX,velobank.com"
+    },
+    {
+      "reason": "Dave financial accounts; Accademia",
+      "rule": "DOMAIN-SUFFIX,trydave.com"
+    },
+    {
+      "reason": "Financing/payment accounts; Accademia; broader than bank-only scope",
+      "rule": "DOMAIN-SUFFIX,sezzle.com"
+    },
+    {
+      "reason": "GoBank-related account/reward candidate; Accademia community evidence, not live servicing guarantee",
+      "rule": "DOMAIN-SUFFIX,gobankrewards.com"
+    },
+    {
+      "reason": "Bank-related investment/account services; Accademia",
+      "rule": "DOMAIN-SUFFIX,morganstanley.com"
+    },
+    {
+      "reason": "BNY Mellon account services; Accademia",
+      "rule": "DOMAIN-SUFFIX,bnymellon.com"
+    },
+    {
+      "reason": "State Street account services; Accademia",
+      "rule": "DOMAIN-SUFFIX,statestreet.com"
+    },
+    {
+      "reason": "Schwab banking/brokerage accounts; Accademia",
+      "rule": "DOMAIN-SUFFIX,schwab.com"
+    },
+    {
+      "reason": "Northern Trust banking; Accademia",
+      "rule": "DOMAIN-SUFFIX,northerntrust.com"
+    },
+    {
+      "reason": "Santander US bank; Accademia",
+      "rule": "DOMAIN-SUFFIX,santanderbank.com"
+    },
+    {
+      "reason": "Comerica banking; Accademia",
+      "rule": "DOMAIN-SUFFIX,comerica.com"
+    },
+    {
+      "reason": "Zions banking; Accademia",
+      "rule": "DOMAIN-SUFFIX,zionsbank.com"
+    },
+    {
+      "reason": "HSBC US online banking https://www.us.hsbc.com/online-banking/; Accademia; restrict to US subtree",
+      "rule": "DOMAIN-SUFFIX,us.hsbc.com"
+    },
+    {
+      "reason": "Exact duplicate semantic scope retained to track Accademia source record; suffix already covers it",
+      "rule": "DOMAIN,us.hsbc.com"
+    },
+    {
+      "reason": "Shared bank-account linking infrastructure; Accademia; all Plaid consumers may route through selected outbound",
+      "rule": "DOMAIN-SUFFIX,plaid.com"
+    },
+    {
+      "reason": "Zelle payment/account linking service; missuo; other consumers also route",
+      "rule": "DOMAIN-SUFFIX,zellepay.com"
+    },
+    {
+      "reason": "Shared bank bill-payment dependency; missuo; not bank-exclusive",
+      "rule": "DOMAIN-SUFFIX,checkfreeweb.com"
+    },
+    {
+      "reason": "Shared financial transfer dependency; missuo; not bank-exclusive",
+      "rule": "DOMAIN-SUFFIX,cashedge.com"
+    },
+    {
+      "reason": "Shared device/risk service candidate; missuo community dependency evidence, all consumers affected",
+      "rule": "DOMAIN-SUFFIX,iesnare.com"
+    },
+    {
+      "reason": "Shared credit/identity services; missuo; includes nonbank credit-service traffic",
+      "rule": "DOMAIN-SUFFIX,equifax.com"
+    },
+    {
+      "reason": "Payment/linked funding account coverage; missuo; broader financial scope",
+      "rule": "DOMAIN-SUFFIX,paypal.com"
+    },
+    {
+      "reason": "Payment/linked funding account coverage; missuo",
+      "rule": "DOMAIN-SUFFIX,venmo.com"
+    },
+    {
+      "reason": "Financial account/payment coverage; missuo",
+      "rule": "DOMAIN-SUFFIX,cash.app"
+    },
+    {
+      "reason": "Financial receiving account coverage; missuo",
+      "rule": "DOMAIN-SUFFIX,payoneer.com"
+    },
+    {
+      "reason": "Cross-border funding/repayment account coverage; missuo; also routes non-US use",
+      "rule": "DOMAIN-SUFFIX,wise.com"
+    },
+    {
+      "reason": "Historical bank-payment service; missuo; service availability not guaranteed",
+      "rule": "DOMAIN-SUFFIX,popmoney.com"
+    },
+    {
+      "reason": "Financial payment service; missuo",
+      "rule": "DOMAIN-SUFFIX,wepay.com"
+    },
+    {
+      "reason": "Financial transfer service; missuo",
+      "rule": "DOMAIN-SUFFIX,dwolla.com"
+    },
+    {
+      "reason": "Financial remittance service; missuo",
+      "rule": "DOMAIN-SUFFIX,xoom.com"
+    },
+    {
+      "reason": "Financial payment account service; missuo",
+      "rule": "DOMAIN-SUFFIX,bill.com"
+    },
+    {
+      "reason": "Shared payment infrastructure; missuo; may affect merchant checkout outside banks",
+      "rule": "DOMAIN-SUFFIX,authorize.net"
+    },
+    {
+      "reason": "Shared payment infrastructure; missuo; may affect merchant checkout outside banks",
+      "rule": "DOMAIN-SUFFIX,braintreepayments.com"
+    },
+    {
+      "reason": "Shared payment/account infrastructure; missuo; nonbank consumers also affected",
+      "rule": "DOMAIN-SUFFIX,stripe.com"
+    },
+    {
+      "reason": "Shared payment/account service; missuo; merchant traffic included",
+      "rule": "DOMAIN-SUFFIX,squareup.com"
+    },
+    {
+      "reason": "Shared Square financial/merchant service; missuo",
+      "rule": "DOMAIN-SUFFIX,square.com"
+    }
+  ],
+  "excluded": [
+    {
+      "reason": "Unbounded substring can match unrelated/malicious domains; reviewed namespaces cover known bank domains",
+      "rule": "DOMAIN-KEYWORD,chase"
+    },
+    {
+      "reason": "Unbounded substring is not bank ownership proof",
+      "rule": "DOMAIN-KEYWORD,bankofamerica"
+    },
+    {
+      "reason": "Unbounded substring is not bank ownership proof",
+      "rule": "DOMAIN-KEYWORD,amex"
+    },
+    {
+      "reason": "Unbounded substring is not bank ownership proof",
+      "rule": "DOMAIN-KEYWORD,americanexpress"
+    },
+    {
+      "reason": "Unbounded substring; explicit service domain included",
+      "rule": "DOMAIN-KEYWORD,zellepay"
+    },
+    {
+      "reason": "Unbounded substring; explicit service domain included",
+      "rule": "DOMAIN-KEYWORD,zelle"
+    },
+    {
+      "reason": "Unverified probable misidentification; HSBC US subtree included instead",
+      "rule": "DOMAIN-SUFFIX,hsbc.com.us"
+    },
+    {
+      "reason": "Not established as East West Bank; correct eastwestbank.com added from official source",
+      "rule": "DOMAIN-SUFFIX,eastwest.com"
+    },
+    {
+      "reason": "Legacy BBVA USA domain, current ownership/service not established; requires revalidation",
+      "rule": "DOMAIN-SUFFIX,bbvausa.com"
+    },
+    {
+      "reason": "Historical fintech; current servicing/domain ownership not established",
+      "rule": "DOMAIN-SUFFIX,sablecard.com"
+    },
+    {
+      "reason": "Historical fintech; current servicing/domain ownership not established",
+      "rule": "DOMAIN-SUFFIX,joinellis.com"
+    },
+    {
+      "reason": "Unrelated map service, not bank dependency evidence",
+      "rule": "DOMAIN-SUFFIX,autonavi.com"
+    },
+    {
+      "reason": "General shopping root, not necessary bank account infrastructure",
+      "rule": "DOMAIN-SUFFIX,ebay.com"
+    },
+    {
+      "reason": "Crypto exchange outside bank and linked payment scope",
+      "rule": "DOMAIN-SUFFIX,kraken.com"
+    },
+    {
+      "reason": "Shared general analytics root; no bank-specific host evidence",
+      "rule": "DOMAIN-SUFFIX,segment.io"
+    },
+    {
+      "reason": "Shared general analytics root; no bank-specific host evidence",
+      "rule": "DOMAIN-SUFFIX,segment.com"
+    },
+    {
+      "reason": "Shared analytics root; require bank-specific hostname evidence",
+      "rule": "DOMAIN-SUFFIX,quantummetric.com"
+    },
+    {
+      "reason": "Shared experimentation root; require bank-specific hostname evidence",
+      "rule": "DOMAIN-SUFFIX,optimizely.com"
+    },
+    {
+      "reason": "Shared tracking root; require bank-specific hostname evidence",
+      "rule": "DOMAIN-SUFFIX,demdex.net"
+    },
+    {
+      "reason": "Shared tag-manager root; require bank-specific hostname evidence",
+      "rule": "DOMAIN-SUFFIX,adobedtm.com"
+    },
+    {
+      "reason": "Shared support/messaging root; require bank-specific hostname evidence",
+      "rule": "DOMAIN-SUFFIX,intercom.com"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rules cannot provide portable per-App guarantee",
+      "rule": "PROCESS-NAME,com.americanexpress.amexservice"
+    },
+    {
+      "reason": "Not a domain; strict App/device routing must be configured independently",
+      "rule": "PROCESS-NAME,com.chase"
+    },
+    {
+      "reason": "Not a domain; strict App/device routing must be configured independently",
+      "rule": "PROCESS-NAME,com.capitalone.banking"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,com.squareup.cash"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,com.zellepay"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,com.hsbc.us.hsbcus"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,com.revolut.revolut"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,com.stripe.dashboard"
+    },
+    {
+      "reason": "Unrelated process and not a domain",
+      "rule": "PROCESS-NAME,com.amazon.Amazon"
+    },
+    {
+      "reason": "Not a domain; OS-dependent process rule",
+      "rule": "PROCESS-NAME,net.kortina.labs.Venmo"
+    }
+  ],
+  "source_counts": {
+    "accademia": {
+      "baseline": 45,
+      "max_delta": 0
+    },
+    "missuo": {
+      "baseline": 105,
+      "max_delta": 0
+    }
+  },
+  "supplemental": [
+    {
+      "checked_at": "2026-10-23",
+      "evidence": [
+        "https://www.eastwestbank.com/en/personal-banking"
+      ],
+      "reason": "Correct East West Bank namespace, replacing upstream eastwest.com misidentification",
+      "rule": "DOMAIN-SUFFIX,eastwestbank.com"
+    },
+    {
+      "checked_at": "2026-10-23",
+      "evidence": [
+        "https://www.americanexpress.com/us/account/add-us-to-your-address-book.html"
+      ],
+      "reason": "Amex-owned account/communication namespace; official US address-book page confirms related namespace, not exhaustive App evidence",
+      "rule": "DOMAIN-SUFFIX,aexp.com"
+    }
+  ],
+  "version": 3
+}
