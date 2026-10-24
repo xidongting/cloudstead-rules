@@ -2,16 +2,62 @@
   "rules": [
     {
       "domain": [
-        "dnc8pt3q0ulny.cloudfront.net"
+        "dnc8pt3q0ulny.cloudfront.net",
+        "epdg.epc.att.net",
+        "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "sentitlement2.mobile.att.net",
+        "ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "vvm.mobile.att.net"
       ]
     },
     {
       "domain_suffix": [
+        "depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+        "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "redirect.ultra.me",
         "redpocket.com",
         "t-mobile.com",
         "tello.com",
         "ultramobile.com"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "208.54.0.0/16"
+      ],
+      "network": [
+        "udp"
+      ],
+      "port": [
+        500,
+        4500
+      ]
+    },
+    {
+      "ip_cidr": [
+        "208.54.0.0/16"
+      ],
+      "network": [
+        "tcp",
+        "udp"
+      ],
+      "port": [
+        5061
+      ]
+    },
+    {
+      "ip_cidr": [
+        "66.94.0.0/19"
+      ],
+      "network": [
+        "tcp"
+      ],
+      "port": [
+        443,
+        993
       ]
     }
   ],

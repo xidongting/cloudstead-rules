@@ -1,15 +1,15 @@
 {
-  "built_at": "2026-10-24T11:58:22.054116+00:00",
+  "built_at": "2026-10-24T12:37:33.860758+00:00",
   "categories": {
     "us-bank": {
-      "built_at": "2026-10-24T11:57:48.928683+00:00",
+      "built_at": "2026-10-24T12:37:06.178761+00:00",
       "category": "us-bank",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "624f28025aec99b5b30d976f39a098278222261a219c55b379af0ffdc63014c2",
+      "content_id": "aceaaaeed2f29ef2dd8d708ac965e5f72d901d5742a67303895e4c9a5df980b8",
       "domain_count": 97,
       "effective_rules": [
         {
@@ -354,6 +354,8 @@
         "directives": [],
         "observations": []
       },
+      "packet_evidence": [],
+      "packet_rule_count": 0,
       "policy_version": 5,
       "rule_count": 98,
       "rule_provenance": {
@@ -1125,28 +1127,74 @@
       ]
     },
     "us-mobile": {
-      "built_at": "2026-10-24T11:57:51.279539+00:00",
+      "built_at": "2026-10-24T12:37:10.604005+00:00",
       "category": "us-mobile",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "1100697f91adbd9617c820236ba43a55a97f985a8ef86e1c9733560bbb3d395e",
-      "domain_count": 6,
+      "content_id": "17591015fe9aa84df3e572f1d024a0850db144ddc6f2931f0690c74ccdfaa3ec",
+      "domain_count": 14,
       "effective_rules": [
         {
           "domain": [
-            "dnc8pt3q0ulny.cloudfront.net"
+            "dnc8pt3q0ulny.cloudfront.net",
+            "epdg.epc.att.net",
+            "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "sentitlement2.mobile.att.net",
+            "ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "vvm.mobile.att.net"
           ]
         },
         {
           "domain_suffix": [
+            "depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "redirect.ultra.me",
             "redpocket.com",
             "t-mobile.com",
             "tello.com",
             "ultramobile.com"
+          ]
+        },
+        {
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "udp"
+          ],
+          "port": [
+            500,
+            4500
+          ]
+        },
+        {
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "tcp",
+            "udp"
+          ],
+          "port": [
+            5061
+          ]
+        },
+        {
+          "ip_cidr": [
+            "66.94.0.0/19"
+          ],
+          "network": [
+            "tcp"
+          ],
+          "port": [
+            443,
+            993
           ]
         }
       ],
@@ -1157,17 +1205,84 @@
         "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
         "README.md": "817752d23030e37b28d437650387a533a800140cd6a6a82e89ccbac2353575c5",
         "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
-        "policy.json": "b143411de00225a77268a8034914c7de87391382bbe058afb58a09f6e3c2c2b6",
-        "us-mobile.json": "f7eb2a00a579760699e8b5fd1fbdec44adb9bec4dd91cfc46ba760bfbcb18408",
-        "us-mobile.srs": "b675f08d8ca3b4d4f60a22f040f849ec7b7db1d830ee85ba8fe11e0999ed6f6f"
+        "policy.json": "6c74c254317a1d30a1817c8936ae50ac69a85eed074836b80eb33dcd89ffa7c5",
+        "us-mobile.json": "0952febb690451a18230c2e814d8d3215a5589ef5d29024211ada6a4f1416c38",
+        "us-mobile.srs": "9ffa6f10cf5b6e3b23ac69eef09239c11815219270c96524b441c95b512472d8"
       },
       "override_resolution": {
         "category": "us-mobile",
         "directives": [],
         "observations": []
       },
-      "policy_version": 1,
-      "rule_count": 6,
+      "packet_evidence": [
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+          ],
+          "id": "tm-wfc2-ipsec",
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "udp"
+          ],
+          "port": [
+            500,
+            4500
+          ],
+          "reason": "T-Mobile official WFC2 IKE/NAT-T range, constrained to stated UDP ports; does not route all traffic in range",
+          "services": [
+            "T-Mobile WFC2",
+            "Ultra/Tello underlying-network candidate; not device-tested"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+          ],
+          "id": "tm-wfc1-sip",
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "tcp",
+            "udp"
+          ],
+          "port": [
+            5061
+          ],
+          "reason": "T-Mobile official legacy WFC1 SIP/TLS range and port; explicitly legacy",
+          "services": [
+            "T-Mobile WFC1 legacy"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+          ],
+          "id": "tm-wfc1-auth-vvm",
+          "ip_cidr": [
+            "66.94.0.0/19"
+          ],
+          "network": [
+            "tcp"
+          ],
+          "port": [
+            443,
+            993
+          ],
+          "reason": "T-Mobile official legacy WFC1 handset auth and visual voicemail ports; not general gateway",
+          "services": [
+            "T-Mobile WFC1 legacy auth/voicemail"
+          ]
+        }
+      ],
+      "packet_rule_count": 3,
+      "policy_version": 2,
+      "rule_count": 16,
       "rule_provenance": {
         "DOMAIN,dnc8pt3q0ulny.cloudfront.net": {
           "basis": {
@@ -1182,6 +1297,93 @@
             ]
           },
           "sources": []
+        },
+        "DOMAIN,epdg.epc.att.net": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+              "https://www.att.com/support/article/wireless/KM1114459/"
+            ],
+            "reason": "AT&T ePDG named by network-device official documentation; candidate for Red Pocket GSMA, not SIM/device-verified",
+            "rule": "DOMAIN,epdg.epc.att.net",
+            "services": [
+              "Red Pocket GSMA / AT&T ePDG"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-ous"
+          ]
+        },
+        "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-ous"
+          ]
+        },
+        "DOMAIN,sentitlement2.mobile.att.net": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+              "https://www.att.com/support/article/wireless/KM1114459/"
+            ],
+            "reason": "AT&T entitlement/authorization hostname; not an ePDG or SM-DP+",
+            "rule": "DOMAIN,sentitlement2.mobile.att.net",
+            "services": [
+              "Red Pocket GSMA / AT&T authorization"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-ous"
+          ]
+        },
+        "DOMAIN,vvm.mobile.att.net": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+              "https://www.att.com/support/article/wireless/KM1114459/"
+            ],
+            "reason": "AT&T visual voicemail helper, not core voice gateway; vvm spelling supported, vmm community variant deliberately excluded",
+            "rule": "DOMAIN,vvm.mobile.att.net",
+            "services": [
+              "AT&T visual voicemail auxiliary"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
+        },
+        "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
+        },
+        "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
+        },
+        "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
         },
         "DOMAIN-SUFFIX,redirect.ultra.me": {
           "basis": "source-scoped domain ingestion",
@@ -1239,6 +1441,16 @@
       },
       "rules": [
         "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+        "DOMAIN,epdg.epc.att.net",
+        "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,sentitlement2.mobile.att.net",
+        "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,vvm.mobile.att.net",
+        "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,redirect.ultra.me",
         "DOMAIN-SUFFIX,redpocket.com",
         "DOMAIN-SUFFIX,t-mobile.com",
@@ -1249,18 +1461,23 @@
       "sources": [
         {
           "commit": "93c84552802d3541e4359638f07075d32b7014f0",
-          "effective_rule_count": 2,
+          "effective_rule_count": 6,
           "extraction": {
             "domain_scope": [
               "ultramobile.com",
-              "redirect.ultra.me"
+              "redirect.ultra.me",
+              "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+              "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+              "epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+              "depdg.epc.mnc260.mcc310.pub.3gppnetwork.org"
             ],
             "section": {
               "end": "# 英国 SIM 卡 Wi-Fi Calling 配置规则",
               "start": "# 美国 SIM 卡 Wi-Fi Calling 配置规则"
             },
             "services": [
-              "Ultra website/account redirect"
+              "Ultra website/account redirect",
+              "T-Mobile-network ePDG candidates; Ultra/Tello applicability not device-tested"
             ]
           },
           "id": "mobile-levi",
@@ -1270,11 +1487,7 @@
             "DOMAIN-KEYWORD,t-mobile",
             "DOMAIN-KEYWORD,ultramobile",
             "DOMAIN-SUFFIX,crl.t-mobile.com",
-            "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "DOMAIN-SUFFIX,eas3.msg.t-mobile.com",
-            "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
-            "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
-            "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "DOMAIN-SUFFIX,mascns.t-mobile.com",
             "DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com",
             "DOMAIN-SUFFIX,optimizely.com",
@@ -1282,39 +1495,39 @@
             "IP-CIDR,208.54.0.0/16,no-resolve",
             "IP-CIDR,66.94.0.0/19,no-resolve"
           ],
-          "rule_count": 2,
+          "rule_count": 6,
           "sha256": "6bada21d469180f63f2883bf496b034dfd8e42eba62944ff93d54793b332c04b",
           "url": "https://raw.githubusercontent.com/czy13724/Surge/93c84552802d3541e4359638f07075d32b7014f0/Rules/esimswificalling.list"
         },
         {
           "commit": "76db75e6f1e70022b48c866a470f1a23c330fa60",
-          "effective_rule_count": 1,
+          "effective_rule_count": 4,
           "extraction": {
             "domain_scope": [
-              "t-mobile.com"
+              "t-mobile.com",
+              "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+              "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org"
             ],
             "section": {
               "end": "# Calling & RTP tunnel",
               "start": "# T-Mobile"
             },
             "services": [
-              "T-Mobile website/account"
+              "T-Mobile website/account",
+              "T-Mobile-network ePDG and ss/geo variants; not a blanket MCC subtree"
             ]
           },
           "id": "mobile-ous",
           "license": "MIT",
           "license_sha256": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
           "outside_scope": [
-            "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
-            "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
-            "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "DOMAIN,t-mobile.idemia.io",
             "IP-CIDR,206.29.177.36/32,no-resolve",
             "IP-CIDR,208.54.0.0/16,no-resolve",
             "IP-CIDR,66.94.0.0/19,no-resolve"
           ],
-          "rule_count": 1,
+          "rule_count": 4,
           "sha256": "0679c307314a7e7e6a61c218f5ed0c438a93ab89fef104786383048c579ef0f8",
           "url": "https://raw.githubusercontent.com/ous50/Surge/76db75e6f1e70022b48c866a470f1a23c330fa60/wifi-calling/us.conf"
         }
@@ -1359,16 +1572,58 @@
             "Tello account",
             "Tello eSIM management website"
           ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+            "https://www.att.com/support/article/wireless/KM1114459/"
+          ],
+          "reason": "AT&T ePDG named by network-device official documentation; candidate for Red Pocket GSMA, not SIM/device-verified",
+          "rule": "DOMAIN,epdg.epc.att.net",
+          "services": [
+            "Red Pocket GSMA / AT&T ePDG"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+            "https://www.att.com/support/article/wireless/KM1114459/"
+          ],
+          "reason": "AT&T entitlement/authorization hostname; not an ePDG or SM-DP+",
+          "rule": "DOMAIN,sentitlement2.mobile.att.net",
+          "services": [
+            "Red Pocket GSMA / AT&T authorization"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+            "https://www.att.com/support/article/wireless/KM1114459/"
+          ],
+          "reason": "AT&T visual voicemail helper, not core voice gateway; vvm spelling supported, vmm community variant deliberately excluded",
+          "rule": "DOMAIN,vvm.mobile.att.net",
+          "services": [
+            "AT&T visual voicemail auxiliary"
+          ]
         }
       ]
     },
     "us-residential": {
       "category": "us-residential",
-      "domain_count": 103,
+      "domain_count": 111,
       "effective_rules": [
         {
           "domain": [
-            "dnc8pt3q0ulny.cloudfront.net"
+            "dnc8pt3q0ulny.cloudfront.net",
+            "epdg.epc.att.net",
+            "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "sentitlement2.mobile.att.net",
+            "ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "vvm.mobile.att.net"
           ]
         },
         {
@@ -1479,11 +1734,51 @@
         },
         {
           "domain_suffix": [
+            "depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "redirect.ultra.me",
             "redpocket.com",
             "t-mobile.com",
             "tello.com",
             "ultramobile.com"
+          ]
+        },
+        {
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "tcp",
+            "udp"
+          ],
+          "port": [
+            5061
+          ]
+        },
+        {
+          "ip_cidr": [
+            "208.54.0.0/16"
+          ],
+          "network": [
+            "udp"
+          ],
+          "port": [
+            500,
+            4500
+          ]
+        },
+        {
+          "ip_cidr": [
+            "66.94.0.0/19"
+          ],
+          "network": [
+            "tcp"
+          ],
+          "port": [
+            443,
+            993
           ]
         }
       ],
@@ -1491,10 +1786,17 @@
         "us-bank",
         "us-mobile"
       ],
-      "rule_count": 104,
+      "packet_rule_count": 3,
+      "rule_count": 114,
       "rules": [
         "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+        "DOMAIN,epdg.epc.att.net",
+        "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,sentitlement2.mobile.att.net",
+        "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN,us.hsbc.com",
+        "DOMAIN,vvm.mobile.att.net",
         "DOMAIN-SUFFIX,53.com",
         "DOMAIN-SUFFIX,aexp-static.com",
         "DOMAIN-SUFFIX,aexp.com",
@@ -1531,6 +1833,7 @@
         "DOMAIN-SUFFIX,citizensbank.com",
         "DOMAIN-SUFFIX,citizensbankonline.com",
         "DOMAIN-SUFFIX,comerica.com",
+        "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,discover.com",
         "DOMAIN-SUFFIX,discoverbank.com",
         "DOMAIN-SUFFIX,discoverbiz.com",
@@ -1539,6 +1842,9 @@
         "DOMAIN-SUFFIX,discoverpersonalloans.com",
         "DOMAIN-SUFFIX,dwolla.com",
         "DOMAIN-SUFFIX,eastwestbank.com",
+        "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,equifax.com",
         "DOMAIN-SUFFIX,gobankrewards.com",
         "DOMAIN-SUFFIX,goldmansachs.com",
@@ -1600,8 +1906,8 @@
       ]
     }
   },
-  "content_id": "b2416775586a5e6c8ed08f9e9fa96fde946e78fec12d1ab51500d5e9ad5156a4",
-  "domain_count": 103,
+  "content_id": "d42ff17f9928c28df18400158c9d0014ac4c74ba383d6212cfac6aa641ac09cf",
+  "domain_count": 111,
   "excluded": [
     {
       "reason": "Unbounded substring matching is outside the domain namespace policy",
@@ -1827,24 +2133,30 @@
     "LICENSES/missuo.txt": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
     "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
     "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
-    "README.md": "9dca77a1374775714fc1fb0482968a1ca5dd3130941d456e53b6ebe66fa6b4ab",
+    "README.md": "24b5229c0f938dc0c82f568d861d91ff4a1f6987a6d995e1256e40334727da34",
     "overrides.json": "a9550036db0a4926ae4bd292139edd0e8f6aceb096458d6624fdc274c1bf1a58",
     "us-bank-COVERAGE.md": "ec5e22d458fe05167ca46e0253b7473631a7f0eed81063aaa61ff13461ec4020",
     "us-bank-policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
     "us-bank.json": "67ed732281abeb2a8856e61c723b180bcb50bc5db4c75e770d9c790e2f624725",
     "us-bank.srs": "84d66bd66a14f22b67f4b7784b68d31a7885f23a16382c58bfb28f7755799539",
     "us-mobile-COVERAGE.md": "bcacdcd0b51de55950081fb671a54fe34af263f954db895d24b5c9d92a7fe5c3",
-    "us-mobile-policy.json": "b143411de00225a77268a8034914c7de87391382bbe058afb58a09f6e3c2c2b6",
-    "us-mobile.json": "f7eb2a00a579760699e8b5fd1fbdec44adb9bec4dd91cfc46ba760bfbcb18408",
-    "us-mobile.srs": "b675f08d8ca3b4d4f60a22f040f849ec7b7db1d830ee85ba8fe11e0999ed6f6f",
-    "us-residential.json": "2002e945747a21eb4e70b6e9919c9d1e518f3ccda237007c490f7f0dbbc3da1a",
-    "us-residential.srs": "69f082b8748e4103d6d8975fb2f1aa0f8a3fb1a3bca826be134c5151bf976ff5"
+    "us-mobile-policy.json": "6c74c254317a1d30a1817c8936ae50ac69a85eed074836b80eb33dcd89ffa7c5",
+    "us-mobile.json": "0952febb690451a18230c2e814d8d3215a5589ef5d29024211ada6a4f1416c38",
+    "us-mobile.srs": "9ffa6f10cf5b6e3b23ac69eef09239c11815219270c96524b441c95b512472d8",
+    "us-residential.json": "22e8f998c2cdbe8877afaa7e67b65cbf7230c46440e714b87747a37bbd6aace1",
+    "us-residential.srs": "be35e2f1b49fc8e0ef6e3da0d81de9b90808c16dbc1730a6be176a0a92815e4b"
   },
   "policy_version": 1,
-  "rule_count": 104,
+  "rule_count": 114,
   "rules": [
     "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+    "DOMAIN,epdg.epc.att.net",
+    "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+    "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+    "DOMAIN,sentitlement2.mobile.att.net",
+    "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
     "DOMAIN,us.hsbc.com",
+    "DOMAIN,vvm.mobile.att.net",
     "DOMAIN-SUFFIX,53.com",
     "DOMAIN-SUFFIX,aexp-static.com",
     "DOMAIN-SUFFIX,aexp.com",
@@ -1881,6 +2193,7 @@
     "DOMAIN-SUFFIX,citizensbank.com",
     "DOMAIN-SUFFIX,citizensbankonline.com",
     "DOMAIN-SUFFIX,comerica.com",
+    "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
     "DOMAIN-SUFFIX,discover.com",
     "DOMAIN-SUFFIX,discoverbank.com",
     "DOMAIN-SUFFIX,discoverbiz.com",
@@ -1889,6 +2202,9 @@
     "DOMAIN-SUFFIX,discoverpersonalloans.com",
     "DOMAIN-SUFFIX,dwolla.com",
     "DOMAIN-SUFFIX,eastwestbank.com",
+    "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+    "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+    "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
     "DOMAIN-SUFFIX,equifax.com",
     "DOMAIN-SUFFIX,gobankrewards.com",
     "DOMAIN-SUFFIX,goldmansachs.com",
@@ -1975,18 +2291,23 @@
     },
     {
       "commit": "93c84552802d3541e4359638f07075d32b7014f0",
-      "effective_rule_count": 2,
+      "effective_rule_count": 6,
       "extraction": {
         "domain_scope": [
           "ultramobile.com",
-          "redirect.ultra.me"
+          "redirect.ultra.me",
+          "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+          "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+          "epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+          "depdg.epc.mnc260.mcc310.pub.3gppnetwork.org"
         ],
         "section": {
           "end": "# 英国 SIM 卡 Wi-Fi Calling 配置规则",
           "start": "# 美国 SIM 卡 Wi-Fi Calling 配置规则"
         },
         "services": [
-          "Ultra website/account redirect"
+          "Ultra website/account redirect",
+          "T-Mobile-network ePDG candidates; Ultra/Tello applicability not device-tested"
         ]
       },
       "id": "mobile-levi",
@@ -1996,11 +2317,7 @@
         "DOMAIN-KEYWORD,t-mobile",
         "DOMAIN-KEYWORD,ultramobile",
         "DOMAIN-SUFFIX,crl.t-mobile.com",
-        "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,eas3.msg.t-mobile.com",
-        "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
-        "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
-        "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,mascns.t-mobile.com",
         "DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com",
         "DOMAIN-SUFFIX,optimizely.com",
@@ -2008,39 +2325,39 @@
         "IP-CIDR,208.54.0.0/16,no-resolve",
         "IP-CIDR,66.94.0.0/19,no-resolve"
       ],
-      "rule_count": 2,
+      "rule_count": 6,
       "sha256": "6bada21d469180f63f2883bf496b034dfd8e42eba62944ff93d54793b332c04b",
       "url": "https://raw.githubusercontent.com/czy13724/Surge/93c84552802d3541e4359638f07075d32b7014f0/Rules/esimswificalling.list"
     },
     {
       "commit": "76db75e6f1e70022b48c866a470f1a23c330fa60",
-      "effective_rule_count": 1,
+      "effective_rule_count": 4,
       "extraction": {
         "domain_scope": [
-          "t-mobile.com"
+          "t-mobile.com",
+          "epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+          "epdg.epc.mnc240.mcc310.pub.3gppnetwork.org"
         ],
         "section": {
           "end": "# Calling & RTP tunnel",
           "start": "# T-Mobile"
         },
         "services": [
-          "T-Mobile website/account"
+          "T-Mobile website/account",
+          "T-Mobile-network ePDG and ss/geo variants; not a blanket MCC subtree"
         ]
       },
       "id": "mobile-ous",
       "license": "MIT",
       "license_sha256": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
       "outside_scope": [
-        "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
-        "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
-        "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN,t-mobile.idemia.io",
         "IP-CIDR,206.29.177.36/32,no-resolve",
         "IP-CIDR,208.54.0.0/16,no-resolve",
         "IP-CIDR,66.94.0.0/19,no-resolve"
       ],
-      "rule_count": 1,
+      "rule_count": 4,
       "sha256": "0679c307314a7e7e6a61c218f5ed0c438a93ab89fef104786383048c579ef0f8",
       "url": "https://raw.githubusercontent.com/ous50/Surge/76db75e6f1e70022b48c866a470f1a23c330fa60/wifi-calling/us.conf"
     }

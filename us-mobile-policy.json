@@ -2,6 +2,75 @@
   "blocked_suffixes": [],
   "excluded": [],
   "excluded_types": {},
+  "packet_files": [
+    "calling/tmobile-packets.json"
+  ],
+  "packet_rules": [
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+      ],
+      "id": "tm-wfc2-ipsec",
+      "ip_cidr": [
+        "208.54.0.0/16"
+      ],
+      "network": [
+        "udp"
+      ],
+      "port": [
+        500,
+        4500
+      ],
+      "reason": "T-Mobile official WFC2 IKE/NAT-T range, constrained to stated UDP ports; does not route all traffic in range",
+      "services": [
+        "T-Mobile WFC2",
+        "Ultra/Tello underlying-network candidate; not device-tested"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+      ],
+      "id": "tm-wfc1-sip",
+      "ip_cidr": [
+        "208.54.0.0/16"
+      ],
+      "network": [
+        "tcp",
+        "udp"
+      ],
+      "port": [
+        5061
+      ],
+      "reason": "T-Mobile official legacy WFC1 SIP/TLS range and port; explicitly legacy",
+      "services": [
+        "T-Mobile WFC1 legacy"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://www.t-mobile.com/support/coverage/wi-fi-calling-on-a-corporate-network"
+      ],
+      "id": "tm-wfc1-auth-vvm",
+      "ip_cidr": [
+        "66.94.0.0/19"
+      ],
+      "network": [
+        "tcp"
+      ],
+      "port": [
+        443,
+        993
+      ],
+      "reason": "T-Mobile official legacy WFC1 handset auth and visual voicemail ports; not general gateway",
+      "services": [
+        "T-Mobile WFC1 legacy auth/voicemail"
+      ]
+    }
+  ],
   "source_limits": {
     "mobile-levi": {
       "max_drop_fraction": 0.5,
@@ -54,11 +123,48 @@
         "Tello account",
         "Tello eSIM management website"
       ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+        "https://www.att.com/support/article/wireless/KM1114459/"
+      ],
+      "reason": "AT&T ePDG named by network-device official documentation; candidate for Red Pocket GSMA, not SIM/device-verified",
+      "rule": "DOMAIN,epdg.epc.att.net",
+      "services": [
+        "Red Pocket GSMA / AT&T ePDG"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+        "https://www.att.com/support/article/wireless/KM1114459/"
+      ],
+      "reason": "AT&T entitlement/authorization hostname; not an ePDG or SM-DP+",
+      "rule": "DOMAIN,sentitlement2.mobile.att.net",
+      "services": [
+        "Red Pocket GSMA / AT&T authorization"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://arubanetworking.hpe.com/techdocs/CLI-Bank/Content/instant/sh-wifical-dns-patrns.htm",
+        "https://www.att.com/support/article/wireless/KM1114459/"
+      ],
+      "reason": "AT&T visual voicemail helper, not core voice gateway; vvm spelling supported, vmm community variant deliberately excluded",
+      "rule": "DOMAIN,vvm.mobile.att.net",
+      "services": [
+        "AT&T visual voicemail auxiliary"
+      ]
     }
   ],
   "supplemental_files": [
     "web/redpocket.json",
-    "web/tello.json"
+    "web/tello.json",
+    "calling/att-gsma.json"
   ],
-  "version": 1
+  "version": 2
 }
