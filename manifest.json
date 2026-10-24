@@ -1,12 +1,12 @@
 {
-  "built_at": "2026-10-24T10:12:23.211172+00:00",
+  "built_at": "2026-10-24T10:20:26.650280+00:00",
   "category": "us-bank",
   "compiler": {
     "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
     "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
     "version": "v1.15.0-alpha.12"
   },
-  "content_id": "036e50408e9358fa9534d890bef08624cb2310ddca7bf6d51b08f18a96b10443",
+  "content_id": "d3083a3312af8d7c9d2207e2103ea0aa88f24713c11155fe106e5a992e1609fc",
   "domain_count": 97,
   "effective_rules": [
     {
