@@ -103,10 +103,12 @@
   "source_limits": {
     "accademia": {
       "max_drop_fraction": 0.5,
+      "minimum_effective_rules": 20,
       "minimum_rules": 23
     },
     "missuo": {
       "max_drop_fraction": 0.5,
+      "minimum_effective_rules": 40,
       "minimum_rules": 53
     }
   },
@@ -128,5 +130,5 @@
       "rule": "DOMAIN-SUFFIX,aexp.com"
     }
   ],
-  "version": 4
+  "version": 5
 }
