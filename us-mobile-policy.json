@@ -1,0 +1,64 @@
+{
+  "blocked_suffixes": [],
+  "excluded": [],
+  "excluded_types": {},
+  "source_limits": {
+    "mobile-levi": {
+      "max_drop_fraction": 0.5,
+      "minimum_effective_rules": 1,
+      "minimum_rules": 1
+    },
+    "mobile-ous": {
+      "max_drop_fraction": 0.5,
+      "minimum_effective_rules": 1,
+      "minimum_rules": 1
+    }
+  },
+  "supplemental": [
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://www.redpocket.com/login",
+        "https://www.redpocket.com/activate/login"
+      ],
+      "reason": "Red Pocket official site/account/activation namespace; includes GSMA account management but does not prove Wi-Fi Calling endpoint coverage",
+      "rule": "DOMAIN-SUFFIX,redpocket.com",
+      "services": [
+        "Red Pocket website",
+        "Red Pocket account",
+        "Red Pocket eSIM activation website"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://www.redpocket.com/login"
+      ],
+      "reason": "Exact asset host referenced by official Red Pocket login page; no blanket CloudFront suffix",
+      "rule": "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+      "services": [
+        "Red Pocket website assets"
+      ]
+    },
+    {
+      "checked_at": "2026-10-24",
+      "evidence": [
+        "https://tello.com/",
+        "https://tello.com/help_center/my-account",
+        "https://tello.com/help_center/do-you-have-an-app-i-can-use"
+      ],
+      "reason": "Tello official website/account/help and eSIM management namespace; My Tello App VoIP is not system Wi-Fi Calling",
+      "rule": "DOMAIN-SUFFIX,tello.com",
+      "services": [
+        "Tello website",
+        "Tello account",
+        "Tello eSIM management website"
+      ]
+    }
+  ],
+  "supplemental_files": [
+    "web/redpocket.json",
+    "web/tello.json"
+  ],
+  "version": 1
+}

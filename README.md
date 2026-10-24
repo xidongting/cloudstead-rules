@@ -1,8 +1,7 @@
-# us-bank
+# Cloudstead Rules
 
-Reviewed domain classification only; not a proxy or bank-approval guarantee.
-Sources and commits: manifest.json. Per-source notices: LICENSES/.
-Bind to your own verified US residential outbound; do not configure DIRECT fallback.
-Coverage: policy.json, sanitized user instructions in overrides.json; effective rules/provenance/exclusions in manifest.json.
-Shared-service scope and known gaps: COVERAGE.md.
-For strict no-bypass banking, route an isolated device/network entirely through the fixed outbound with gateway-level fail-closed enforcement.
+Choose split us-bank.srs / us-mobile.srs OR combined us-residential.srs; normally do not configure both forms.
+
+us-mobile currently covers websites/accounts/eSIM management namespaces only. Wi-Fi Calling gateways/IPsec are not implemented.
+
+Read per-category COVERAGE files, manifest.json, overrides.json and LICENSES for scope and provenance. Use your own verified residential outbound; no DIRECT fallback for strict sessions. These lists cannot guarantee no unknown-target bypass or bank/carrier eligibility.

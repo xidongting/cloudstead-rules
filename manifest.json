@@ -1,121 +1,1607 @@
 {
-  "built_at": "2026-10-24T10:20:26.650280+00:00",
-  "category": "us-bank",
-  "compiler": {
-    "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
-    "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
-    "version": "v1.15.0-alpha.12"
-  },
-  "content_id": "d3083a3312af8d7c9d2207e2103ea0aa88f24713c11155fe106e5a992e1609fc",
-  "domain_count": 97,
-  "effective_rules": [
-    {
-      "domain": [
-        "us.hsbc.com"
+  "built_at": "2026-10-24T11:46:05.880525+00:00",
+  "categories": {
+    "us-bank": {
+      "built_at": "2026-10-24T11:45:40.728146+00:00",
+      "category": "us-bank",
+      "compiler": {
+        "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
+        "version": "v1.15.0-alpha.12"
+      },
+      "content_id": "624f28025aec99b5b30d976f39a098278222261a219c55b379af0ffdc63014c2",
+      "domain_count": 97,
+      "effective_rules": [
+        {
+          "domain": [
+            "us.hsbc.com"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "53.com",
+            "aexp-static.com",
+            "aexp.com",
+            "ally.com",
+            "americanexpress.com",
+            "amex.com",
+            "amextravel.com",
+            "authorize.net",
+            "bac.com",
+            "baml.com",
+            "bankofamerica.com",
+            "bbt.com",
+            "bill.com",
+            "bmo.com",
+            "bmoharris.com",
+            "bnymellon.com",
+            "bofa.com",
+            "braintreepayments.com",
+            "capitalone.com",
+            "capitalone360.com",
+            "cash.app",
+            "cashedge.com",
+            "cathaybank.com",
+            "chase.com",
+            "chasepaymentech.com",
+            "checkfreeweb.com",
+            "citi.com",
+            "citibank.com",
+            "citibankonline.com",
+            "citicards.com",
+            "citidirect.com",
+            "citigroup.com",
+            "citizensaccess.com",
+            "citizensbank.com",
+            "citizensbankonline.com",
+            "comerica.com",
+            "discover.com",
+            "discoverbank.com",
+            "discoverbiz.com",
+            "discovercard.com",
+            "discoverit.com",
+            "discoverpersonalloans.com",
+            "dwolla.com",
+            "eastwestbank.com",
+            "equifax.com",
+            "gobankrewards.com",
+            "goldmansachs.com",
+            "huntington.com",
+            "iesnare.com",
+            "jpmorgan.com",
+            "jpmorganchase.com",
+            "key.com",
+            "marcus.com",
+            "merrilledge.com",
+            "ml.com",
+            "morganstanley.com",
+            "mtb.com",
+            "northerntrust.com",
+            "payoneer.com",
+            "paypal.com",
+            "plaid.com",
+            "pnc.com",
+            "pncpaycard.com",
+            "pncprepaidcard.com",
+            "popmoney.com",
+            "regions.com",
+            "santanderbank.com",
+            "schwab.com",
+            "serve.com",
+            "sezzle.com",
+            "sofi.com",
+            "square.com",
+            "squareup.com",
+            "statestreet.com",
+            "stripe.com",
+            "suntrust.com",
+            "synchronybank.com",
+            "td.com",
+            "tdbank.com",
+            "tdcommercialbanking.com",
+            "truist.com",
+            "trydave.com",
+            "us.hsbc.com",
+            "usaa.com",
+            "usbank.com",
+            "usbankreliacard.com",
+            "varomoney.com",
+            "velobank.com",
+            "venmo.com",
+            "wellsfargo.com",
+            "wellsfargoadvisors.com",
+            "wepay.com",
+            "wf.com",
+            "wise.com",
+            "xoom.com",
+            "zellepay.com",
+            "zionsbank.com"
+          ]
+        }
+      ],
+      "excluded": [
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,americanexpress",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,amex",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,bankofamerica",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,chase",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,zelle",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Unbounded substring matching is outside the domain namespace policy",
+          "rule": "DOMAIN-KEYWORD,zellepay",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Shared tag-manager root; require bank-specific hostname evidence",
+          "rule": "DOMAIN-SUFFIX,adobedtm.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Unrelated map service, not bank dependency evidence",
+          "rule": "DOMAIN-SUFFIX,autonavi.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Legacy BBVA USA domain, current ownership/service not established; requires revalidation",
+          "rule": "DOMAIN-SUFFIX,bbvausa.com",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Shared tracking root; require bank-specific hostname evidence",
+          "rule": "DOMAIN-SUFFIX,demdex.net",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Not established as East West Bank; correct eastwestbank.com added from official source",
+          "rule": "DOMAIN-SUFFIX,eastwest.com",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "General shopping root, not necessary bank account infrastructure",
+          "rule": "DOMAIN-SUFFIX,ebay.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Unverified probable misidentification; HSBC US subtree included instead",
+          "rule": "DOMAIN-SUFFIX,hsbc.com.us",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Shared support/messaging root; require bank-specific hostname evidence",
+          "rule": "DOMAIN-SUFFIX,intercom.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Historical fintech; current servicing/domain ownership not established",
+          "rule": "DOMAIN-SUFFIX,joinellis.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Crypto exchange outside bank and linked payment scope",
+          "rule": "DOMAIN-SUFFIX,kraken.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Shared experimentation root; require bank-specific hostname evidence",
+          "rule": "DOMAIN-SUFFIX,optimizely.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Shared analytics root; require bank-specific hostname evidence",
+          "rule": "DOMAIN-SUFFIX,quantummetric.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Historical fintech; current servicing/domain ownership not established",
+          "rule": "DOMAIN-SUFFIX,sablecard.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Shared general analytics root; no bank-specific host evidence",
+          "rule": "DOMAIN-SUFFIX,segment.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Shared general analytics root; no bank-specific host evidence",
+          "rule": "DOMAIN-SUFFIX,segment.io",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.amazon.Amazon",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.americanexpress.amexservice",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.capitalone.banking",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.chase",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.hsbc.us.hsbcus",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.revolut.revolut",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.squareup.cash",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.stripe.dashboard",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,com.zellepay",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "OS-dependent process matching is outside this portable domain rule-set",
+          "rule": "PROCESS-NAME,net.kortina.labs.Venmo",
+          "sources": [
+            "missuo"
+          ]
+        }
+      ],
+      "files": {
+        "COVERAGE.md": "ec5e22d458fe05167ca46e0253b7473631a7f0eed81063aaa61ff13461ec4020",
+        "LICENSES/accademia.txt": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
+        "LICENSES/missuo.txt": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
+        "README.md": "a56ef405f35c090688837045505cdc16da488cfd33d7c7cc9bbd33048b17f1ee",
+        "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
+        "policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
+        "us-bank.json": "67ed732281abeb2a8856e61c723b180bcb50bc5db4c75e770d9c790e2f624725",
+        "us-bank.srs": "84d66bd66a14f22b67f4b7784b68d31a7885f23a16382c58bfb28f7755799539"
+      },
+      "override_resolution": {
+        "category": "us-bank",
+        "directives": [],
+        "observations": []
+      },
+      "policy_version": 5,
+      "rule_count": 98,
+      "rule_provenance": {
+        "DOMAIN,us.hsbc.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,53.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,aexp-static.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,aexp.com": {
+          "basis": {
+            "checked_at": "2026-10-23",
+            "evidence": [
+              "https://www.americanexpress.com/us/account/add-us-to-your-address-book.html"
+            ],
+            "reason": "Amex-owned account/communication namespace; official US address-book page confirms related namespace, not exhaustive App evidence",
+            "rule": "DOMAIN-SUFFIX,aexp.com"
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,ally.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,americanexpress.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,amex.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,amextravel.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,authorize.net": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bac.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,baml.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bankofamerica.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,bbt.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bill.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bmo.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bmoharris.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,bnymellon.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,bofa.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,braintreepayments.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,capitalone.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,capitalone360.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,cash.app": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,cashedge.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,cathaybank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,chase.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,chasepaymentech.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,checkfreeweb.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,citi.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,citibank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,citibankonline.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,citicards.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,citidirect.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,citigroup.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,citizensaccess.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,citizensbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,citizensbankonline.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,comerica.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,discover.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,discoverbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,discoverbiz.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,discovercard.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,discoverit.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,discoverpersonalloans.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,dwolla.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,eastwestbank.com": {
+          "basis": {
+            "checked_at": "2026-10-23",
+            "evidence": [
+              "https://www.eastwestbank.com/en/personal-banking"
+            ],
+            "reason": "Correct East West Bank namespace, replacing upstream eastwest.com misidentification",
+            "rule": "DOMAIN-SUFFIX,eastwestbank.com"
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,equifax.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,gobankrewards.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,goldmansachs.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,huntington.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,iesnare.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,jpmorgan.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,jpmorganchase.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,key.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,marcus.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,merrilledge.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,ml.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,morganstanley.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,mtb.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,northerntrust.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,payoneer.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,paypal.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,plaid.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,pnc.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,pncpaycard.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,pncprepaidcard.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,popmoney.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,regions.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,santanderbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,schwab.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,serve.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,sezzle.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,sofi.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,square.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,squareup.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,statestreet.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,stripe.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,suntrust.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,synchronybank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,td.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,tdbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,tdcommercialbanking.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,truist.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,trydave.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,us.hsbc.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,usaa.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,usbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,usbankreliacard.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,varomoney.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,velobank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,venmo.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,wellsfargo.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo",
+            "accademia"
+          ]
+        },
+        "DOMAIN-SUFFIX,wellsfargoadvisors.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,wepay.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,wf.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,wise.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,xoom.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,zellepay.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "missuo"
+          ]
+        },
+        "DOMAIN-SUFFIX,zionsbank.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "accademia"
+          ]
+        }
+      },
+      "rules": [
+        "DOMAIN,us.hsbc.com",
+        "DOMAIN-SUFFIX,53.com",
+        "DOMAIN-SUFFIX,aexp-static.com",
+        "DOMAIN-SUFFIX,aexp.com",
+        "DOMAIN-SUFFIX,ally.com",
+        "DOMAIN-SUFFIX,americanexpress.com",
+        "DOMAIN-SUFFIX,amex.com",
+        "DOMAIN-SUFFIX,amextravel.com",
+        "DOMAIN-SUFFIX,authorize.net",
+        "DOMAIN-SUFFIX,bac.com",
+        "DOMAIN-SUFFIX,baml.com",
+        "DOMAIN-SUFFIX,bankofamerica.com",
+        "DOMAIN-SUFFIX,bbt.com",
+        "DOMAIN-SUFFIX,bill.com",
+        "DOMAIN-SUFFIX,bmo.com",
+        "DOMAIN-SUFFIX,bmoharris.com",
+        "DOMAIN-SUFFIX,bnymellon.com",
+        "DOMAIN-SUFFIX,bofa.com",
+        "DOMAIN-SUFFIX,braintreepayments.com",
+        "DOMAIN-SUFFIX,capitalone.com",
+        "DOMAIN-SUFFIX,capitalone360.com",
+        "DOMAIN-SUFFIX,cash.app",
+        "DOMAIN-SUFFIX,cashedge.com",
+        "DOMAIN-SUFFIX,cathaybank.com",
+        "DOMAIN-SUFFIX,chase.com",
+        "DOMAIN-SUFFIX,chasepaymentech.com",
+        "DOMAIN-SUFFIX,checkfreeweb.com",
+        "DOMAIN-SUFFIX,citi.com",
+        "DOMAIN-SUFFIX,citibank.com",
+        "DOMAIN-SUFFIX,citibankonline.com",
+        "DOMAIN-SUFFIX,citicards.com",
+        "DOMAIN-SUFFIX,citidirect.com",
+        "DOMAIN-SUFFIX,citigroup.com",
+        "DOMAIN-SUFFIX,citizensaccess.com",
+        "DOMAIN-SUFFIX,citizensbank.com",
+        "DOMAIN-SUFFIX,citizensbankonline.com",
+        "DOMAIN-SUFFIX,comerica.com",
+        "DOMAIN-SUFFIX,discover.com",
+        "DOMAIN-SUFFIX,discoverbank.com",
+        "DOMAIN-SUFFIX,discoverbiz.com",
+        "DOMAIN-SUFFIX,discovercard.com",
+        "DOMAIN-SUFFIX,discoverit.com",
+        "DOMAIN-SUFFIX,discoverpersonalloans.com",
+        "DOMAIN-SUFFIX,dwolla.com",
+        "DOMAIN-SUFFIX,eastwestbank.com",
+        "DOMAIN-SUFFIX,equifax.com",
+        "DOMAIN-SUFFIX,gobankrewards.com",
+        "DOMAIN-SUFFIX,goldmansachs.com",
+        "DOMAIN-SUFFIX,huntington.com",
+        "DOMAIN-SUFFIX,iesnare.com",
+        "DOMAIN-SUFFIX,jpmorgan.com",
+        "DOMAIN-SUFFIX,jpmorganchase.com",
+        "DOMAIN-SUFFIX,key.com",
+        "DOMAIN-SUFFIX,marcus.com",
+        "DOMAIN-SUFFIX,merrilledge.com",
+        "DOMAIN-SUFFIX,ml.com",
+        "DOMAIN-SUFFIX,morganstanley.com",
+        "DOMAIN-SUFFIX,mtb.com",
+        "DOMAIN-SUFFIX,northerntrust.com",
+        "DOMAIN-SUFFIX,payoneer.com",
+        "DOMAIN-SUFFIX,paypal.com",
+        "DOMAIN-SUFFIX,plaid.com",
+        "DOMAIN-SUFFIX,pnc.com",
+        "DOMAIN-SUFFIX,pncpaycard.com",
+        "DOMAIN-SUFFIX,pncprepaidcard.com",
+        "DOMAIN-SUFFIX,popmoney.com",
+        "DOMAIN-SUFFIX,regions.com",
+        "DOMAIN-SUFFIX,santanderbank.com",
+        "DOMAIN-SUFFIX,schwab.com",
+        "DOMAIN-SUFFIX,serve.com",
+        "DOMAIN-SUFFIX,sezzle.com",
+        "DOMAIN-SUFFIX,sofi.com",
+        "DOMAIN-SUFFIX,square.com",
+        "DOMAIN-SUFFIX,squareup.com",
+        "DOMAIN-SUFFIX,statestreet.com",
+        "DOMAIN-SUFFIX,stripe.com",
+        "DOMAIN-SUFFIX,suntrust.com",
+        "DOMAIN-SUFFIX,synchronybank.com",
+        "DOMAIN-SUFFIX,td.com",
+        "DOMAIN-SUFFIX,tdbank.com",
+        "DOMAIN-SUFFIX,tdcommercialbanking.com",
+        "DOMAIN-SUFFIX,truist.com",
+        "DOMAIN-SUFFIX,trydave.com",
+        "DOMAIN-SUFFIX,us.hsbc.com",
+        "DOMAIN-SUFFIX,usaa.com",
+        "DOMAIN-SUFFIX,usbank.com",
+        "DOMAIN-SUFFIX,usbankreliacard.com",
+        "DOMAIN-SUFFIX,varomoney.com",
+        "DOMAIN-SUFFIX,velobank.com",
+        "DOMAIN-SUFFIX,venmo.com",
+        "DOMAIN-SUFFIX,wellsfargo.com",
+        "DOMAIN-SUFFIX,wellsfargoadvisors.com",
+        "DOMAIN-SUFFIX,wepay.com",
+        "DOMAIN-SUFFIX,wf.com",
+        "DOMAIN-SUFFIX,wise.com",
+        "DOMAIN-SUFFIX,xoom.com",
+        "DOMAIN-SUFFIX,zellepay.com",
+        "DOMAIN-SUFFIX,zionsbank.com"
+      ],
+      "rules_semantics": "positive terms only; exclusions and higher-scope precedence are encoded in effective_rules",
+      "sources": [
+        {
+          "commit": "b3f1f2d401943a88d606ad3e90b494eae1b64b42",
+          "effective_rule_count": 79,
+          "extraction": {},
+          "id": "missuo",
+          "license": "MIT",
+          "license_sha256": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
+          "outside_scope": [],
+          "rule_count": 105,
+          "sha256": "862c2914e0a846ea288ff0d44fa49ac16fad9075e8de41dff783fbdc11f5b8a0",
+          "url": "https://raw.githubusercontent.com/missuo/surge_rules/b3f1f2d401943a88d606ad3e90b494eae1b64b42/rule/BankUS.list"
+        },
+        {
+          "commit": "0dff7831cdebc155ef57998fcd88ed20d977f788",
+          "effective_rule_count": 39,
+          "extraction": {},
+          "id": "accademia",
+          "license": "MIT",
+          "license_sha256": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
+          "outside_scope": [],
+          "rule_count": 45,
+          "sha256": "e029019f0a2612612127b0872be0fb17cf0e667af6abf6eeccd6663ace126eef",
+          "url": "https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/0dff7831cdebc155ef57998fcd88ed20d977f788/Bank/BankUS.yaml"
+        }
+      ],
+      "supplemental": [
+        {
+          "checked_at": "2026-10-23",
+          "evidence": [
+            "https://www.eastwestbank.com/en/personal-banking"
+          ],
+          "reason": "Correct East West Bank namespace, replacing upstream eastwest.com misidentification",
+          "rule": "DOMAIN-SUFFIX,eastwestbank.com"
+        },
+        {
+          "checked_at": "2026-10-23",
+          "evidence": [
+            "https://www.americanexpress.com/us/account/add-us-to-your-address-book.html"
+          ],
+          "reason": "Amex-owned account/communication namespace; official US address-book page confirms related namespace, not exhaustive App evidence",
+          "rule": "DOMAIN-SUFFIX,aexp.com"
+        }
       ]
     },
-    {
-      "domain_suffix": [
-        "53.com",
-        "aexp-static.com",
-        "aexp.com",
-        "ally.com",
-        "americanexpress.com",
-        "amex.com",
-        "amextravel.com",
-        "authorize.net",
-        "bac.com",
-        "baml.com",
-        "bankofamerica.com",
-        "bbt.com",
-        "bill.com",
-        "bmo.com",
-        "bmoharris.com",
-        "bnymellon.com",
-        "bofa.com",
-        "braintreepayments.com",
-        "capitalone.com",
-        "capitalone360.com",
-        "cash.app",
-        "cashedge.com",
-        "cathaybank.com",
-        "chase.com",
-        "chasepaymentech.com",
-        "checkfreeweb.com",
-        "citi.com",
-        "citibank.com",
-        "citibankonline.com",
-        "citicards.com",
-        "citidirect.com",
-        "citigroup.com",
-        "citizensaccess.com",
-        "citizensbank.com",
-        "citizensbankonline.com",
-        "comerica.com",
-        "discover.com",
-        "discoverbank.com",
-        "discoverbiz.com",
-        "discovercard.com",
-        "discoverit.com",
-        "discoverpersonalloans.com",
-        "dwolla.com",
-        "eastwestbank.com",
-        "equifax.com",
-        "gobankrewards.com",
-        "goldmansachs.com",
-        "huntington.com",
-        "iesnare.com",
-        "jpmorgan.com",
-        "jpmorganchase.com",
-        "key.com",
-        "marcus.com",
-        "merrilledge.com",
-        "ml.com",
-        "morganstanley.com",
-        "mtb.com",
-        "northerntrust.com",
-        "payoneer.com",
-        "paypal.com",
-        "plaid.com",
-        "pnc.com",
-        "pncpaycard.com",
-        "pncprepaidcard.com",
-        "popmoney.com",
-        "regions.com",
-        "santanderbank.com",
-        "schwab.com",
-        "serve.com",
-        "sezzle.com",
-        "sofi.com",
-        "square.com",
-        "squareup.com",
-        "statestreet.com",
-        "stripe.com",
-        "suntrust.com",
-        "synchronybank.com",
-        "td.com",
-        "tdbank.com",
-        "tdcommercialbanking.com",
-        "truist.com",
-        "trydave.com",
-        "us.hsbc.com",
-        "usaa.com",
-        "usbank.com",
-        "usbankreliacard.com",
-        "varomoney.com",
-        "velobank.com",
-        "venmo.com",
-        "wellsfargo.com",
-        "wellsfargoadvisors.com",
-        "wepay.com",
-        "wf.com",
-        "wise.com",
-        "xoom.com",
-        "zellepay.com",
-        "zionsbank.com"
+    "us-mobile": {
+      "built_at": "2026-10-24T11:45:43.492263+00:00",
+      "category": "us-mobile",
+      "compiler": {
+        "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
+        "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
+        "version": "v1.15.0-alpha.12"
+      },
+      "content_id": "1100697f91adbd9617c820236ba43a55a97f985a8ef86e1c9733560bbb3d395e",
+      "domain_count": 6,
+      "effective_rules": [
+        {
+          "domain": [
+            "dnc8pt3q0ulny.cloudfront.net"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "redirect.ultra.me",
+            "redpocket.com",
+            "t-mobile.com",
+            "tello.com",
+            "ultramobile.com"
+          ]
+        }
+      ],
+      "excluded": [],
+      "files": {
+        "COVERAGE.md": "bcacdcd0b51de55950081fb671a54fe34af263f954db895d24b5c9d92a7fe5c3",
+        "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
+        "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
+        "README.md": "817752d23030e37b28d437650387a533a800140cd6a6a82e89ccbac2353575c5",
+        "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
+        "policy.json": "b143411de00225a77268a8034914c7de87391382bbe058afb58a09f6e3c2c2b6",
+        "us-mobile.json": "f7eb2a00a579760699e8b5fd1fbdec44adb9bec4dd91cfc46ba760bfbcb18408",
+        "us-mobile.srs": "b675f08d8ca3b4d4f60a22f040f849ec7b7db1d830ee85ba8fe11e0999ed6f6f"
+      },
+      "override_resolution": {
+        "category": "us-mobile",
+        "directives": [],
+        "observations": []
+      },
+      "policy_version": 1,
+      "rule_count": 6,
+      "rule_provenance": {
+        "DOMAIN,dnc8pt3q0ulny.cloudfront.net": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://www.redpocket.com/login"
+            ],
+            "reason": "Exact asset host referenced by official Red Pocket login page; no blanket CloudFront suffix",
+            "rule": "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+            "services": [
+              "Red Pocket website assets"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,redirect.ultra.me": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
+        },
+        "DOMAIN-SUFFIX,redpocket.com": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://www.redpocket.com/login",
+              "https://www.redpocket.com/activate/login"
+            ],
+            "reason": "Red Pocket official site/account/activation namespace; includes GSMA account management but does not prove Wi-Fi Calling endpoint coverage",
+            "rule": "DOMAIN-SUFFIX,redpocket.com",
+            "services": [
+              "Red Pocket website",
+              "Red Pocket account",
+              "Red Pocket eSIM activation website"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,t-mobile.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-ous"
+          ]
+        },
+        "DOMAIN-SUFFIX,tello.com": {
+          "basis": {
+            "checked_at": "2026-10-24",
+            "evidence": [
+              "https://tello.com/",
+              "https://tello.com/help_center/my-account",
+              "https://tello.com/help_center/do-you-have-an-app-i-can-use"
+            ],
+            "reason": "Tello official website/account/help and eSIM management namespace; My Tello App VoIP is not system Wi-Fi Calling",
+            "rule": "DOMAIN-SUFFIX,tello.com",
+            "services": [
+              "Tello website",
+              "Tello account",
+              "Tello eSIM management website"
+            ]
+          },
+          "sources": []
+        },
+        "DOMAIN-SUFFIX,ultramobile.com": {
+          "basis": "source-scoped domain ingestion",
+          "sources": [
+            "mobile-levi"
+          ]
+        }
+      },
+      "rules": [
+        "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+        "DOMAIN-SUFFIX,redirect.ultra.me",
+        "DOMAIN-SUFFIX,redpocket.com",
+        "DOMAIN-SUFFIX,t-mobile.com",
+        "DOMAIN-SUFFIX,tello.com",
+        "DOMAIN-SUFFIX,ultramobile.com"
+      ],
+      "rules_semantics": "positive terms only; exclusions and higher-scope precedence are encoded in effective_rules",
+      "sources": [
+        {
+          "commit": "93c84552802d3541e4359638f07075d32b7014f0",
+          "effective_rule_count": 2,
+          "extraction": {
+            "domain_scope": [
+              "ultramobile.com",
+              "redirect.ultra.me"
+            ],
+            "section": {
+              "end": "# 英国 SIM 卡 Wi-Fi Calling 配置规则",
+              "start": "# 美国 SIM 卡 Wi-Fi Calling 配置规则"
+            },
+            "services": [
+              "Ultra website/account redirect"
+            ]
+          },
+          "id": "mobile-levi",
+          "license": "MIT",
+          "license_sha256": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
+          "outside_scope": [
+            "DOMAIN-KEYWORD,t-mobile",
+            "DOMAIN-KEYWORD,ultramobile",
+            "DOMAIN-SUFFIX,crl.t-mobile.com",
+            "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN-SUFFIX,eas3.msg.t-mobile.com",
+            "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN-SUFFIX,mascns.t-mobile.com",
+            "DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com",
+            "DOMAIN-SUFFIX,optimizely.com",
+            "IP-CIDR,206.29.177.36/32,no-resolve",
+            "IP-CIDR,208.54.0.0/16,no-resolve",
+            "IP-CIDR,66.94.0.0/19,no-resolve"
+          ],
+          "rule_count": 2,
+          "sha256": "6bada21d469180f63f2883bf496b034dfd8e42eba62944ff93d54793b332c04b",
+          "url": "https://raw.githubusercontent.com/czy13724/Surge/93c84552802d3541e4359638f07075d32b7014f0/Rules/esimswificalling.list"
+        },
+        {
+          "commit": "76db75e6f1e70022b48c866a470f1a23c330fa60",
+          "effective_rule_count": 1,
+          "extraction": {
+            "domain_scope": [
+              "t-mobile.com"
+            ],
+            "section": {
+              "end": "# Calling & RTP tunnel",
+              "start": "# T-Mobile"
+            },
+            "services": [
+              "T-Mobile website/account"
+            ]
+          },
+          "id": "mobile-ous",
+          "license": "MIT",
+          "license_sha256": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
+          "outside_scope": [
+            "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+            "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+            "DOMAIN,t-mobile.idemia.io",
+            "IP-CIDR,206.29.177.36/32,no-resolve",
+            "IP-CIDR,208.54.0.0/16,no-resolve",
+            "IP-CIDR,66.94.0.0/19,no-resolve"
+          ],
+          "rule_count": 1,
+          "sha256": "0679c307314a7e7e6a61c218f5ed0c438a93ab89fef104786383048c579ef0f8",
+          "url": "https://raw.githubusercontent.com/ous50/Surge/76db75e6f1e70022b48c866a470f1a23c330fa60/wifi-calling/us.conf"
+        }
+      ],
+      "supplemental": [
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://www.redpocket.com/login",
+            "https://www.redpocket.com/activate/login"
+          ],
+          "reason": "Red Pocket official site/account/activation namespace; includes GSMA account management but does not prove Wi-Fi Calling endpoint coverage",
+          "rule": "DOMAIN-SUFFIX,redpocket.com",
+          "services": [
+            "Red Pocket website",
+            "Red Pocket account",
+            "Red Pocket eSIM activation website"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://www.redpocket.com/login"
+          ],
+          "reason": "Exact asset host referenced by official Red Pocket login page; no blanket CloudFront suffix",
+          "rule": "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+          "services": [
+            "Red Pocket website assets"
+          ]
+        },
+        {
+          "checked_at": "2026-10-24",
+          "evidence": [
+            "https://tello.com/",
+            "https://tello.com/help_center/my-account",
+            "https://tello.com/help_center/do-you-have-an-app-i-can-use"
+          ],
+          "reason": "Tello official website/account/help and eSIM management namespace; My Tello App VoIP is not system Wi-Fi Calling",
+          "rule": "DOMAIN-SUFFIX,tello.com",
+          "services": [
+            "Tello website",
+            "Tello account",
+            "Tello eSIM management website"
+          ]
+        }
+      ]
+    },
+    "us-residential": {
+      "category": "us-residential",
+      "domain_count": 103,
+      "effective_rules": [
+        {
+          "domain": [
+            "dnc8pt3q0ulny.cloudfront.net"
+          ]
+        },
+        {
+          "domain": [
+            "us.hsbc.com"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "53.com",
+            "aexp-static.com",
+            "aexp.com",
+            "ally.com",
+            "americanexpress.com",
+            "amex.com",
+            "amextravel.com",
+            "authorize.net",
+            "bac.com",
+            "baml.com",
+            "bankofamerica.com",
+            "bbt.com",
+            "bill.com",
+            "bmo.com",
+            "bmoharris.com",
+            "bnymellon.com",
+            "bofa.com",
+            "braintreepayments.com",
+            "capitalone.com",
+            "capitalone360.com",
+            "cash.app",
+            "cashedge.com",
+            "cathaybank.com",
+            "chase.com",
+            "chasepaymentech.com",
+            "checkfreeweb.com",
+            "citi.com",
+            "citibank.com",
+            "citibankonline.com",
+            "citicards.com",
+            "citidirect.com",
+            "citigroup.com",
+            "citizensaccess.com",
+            "citizensbank.com",
+            "citizensbankonline.com",
+            "comerica.com",
+            "discover.com",
+            "discoverbank.com",
+            "discoverbiz.com",
+            "discovercard.com",
+            "discoverit.com",
+            "discoverpersonalloans.com",
+            "dwolla.com",
+            "eastwestbank.com",
+            "equifax.com",
+            "gobankrewards.com",
+            "goldmansachs.com",
+            "huntington.com",
+            "iesnare.com",
+            "jpmorgan.com",
+            "jpmorganchase.com",
+            "key.com",
+            "marcus.com",
+            "merrilledge.com",
+            "ml.com",
+            "morganstanley.com",
+            "mtb.com",
+            "northerntrust.com",
+            "payoneer.com",
+            "paypal.com",
+            "plaid.com",
+            "pnc.com",
+            "pncpaycard.com",
+            "pncprepaidcard.com",
+            "popmoney.com",
+            "regions.com",
+            "santanderbank.com",
+            "schwab.com",
+            "serve.com",
+            "sezzle.com",
+            "sofi.com",
+            "square.com",
+            "squareup.com",
+            "statestreet.com",
+            "stripe.com",
+            "suntrust.com",
+            "synchronybank.com",
+            "td.com",
+            "tdbank.com",
+            "tdcommercialbanking.com",
+            "truist.com",
+            "trydave.com",
+            "us.hsbc.com",
+            "usaa.com",
+            "usbank.com",
+            "usbankreliacard.com",
+            "varomoney.com",
+            "velobank.com",
+            "venmo.com",
+            "wellsfargo.com",
+            "wellsfargoadvisors.com",
+            "wepay.com",
+            "wf.com",
+            "wise.com",
+            "xoom.com",
+            "zellepay.com",
+            "zionsbank.com"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "redirect.ultra.me",
+            "redpocket.com",
+            "t-mobile.com",
+            "tello.com",
+            "ultramobile.com"
+          ]
+        }
+      ],
+      "members": [
+        "us-bank",
+        "us-mobile"
+      ],
+      "rule_count": 104,
+      "rules": [
+        "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
+        "DOMAIN,us.hsbc.com",
+        "DOMAIN-SUFFIX,53.com",
+        "DOMAIN-SUFFIX,aexp-static.com",
+        "DOMAIN-SUFFIX,aexp.com",
+        "DOMAIN-SUFFIX,ally.com",
+        "DOMAIN-SUFFIX,americanexpress.com",
+        "DOMAIN-SUFFIX,amex.com",
+        "DOMAIN-SUFFIX,amextravel.com",
+        "DOMAIN-SUFFIX,authorize.net",
+        "DOMAIN-SUFFIX,bac.com",
+        "DOMAIN-SUFFIX,baml.com",
+        "DOMAIN-SUFFIX,bankofamerica.com",
+        "DOMAIN-SUFFIX,bbt.com",
+        "DOMAIN-SUFFIX,bill.com",
+        "DOMAIN-SUFFIX,bmo.com",
+        "DOMAIN-SUFFIX,bmoharris.com",
+        "DOMAIN-SUFFIX,bnymellon.com",
+        "DOMAIN-SUFFIX,bofa.com",
+        "DOMAIN-SUFFIX,braintreepayments.com",
+        "DOMAIN-SUFFIX,capitalone.com",
+        "DOMAIN-SUFFIX,capitalone360.com",
+        "DOMAIN-SUFFIX,cash.app",
+        "DOMAIN-SUFFIX,cashedge.com",
+        "DOMAIN-SUFFIX,cathaybank.com",
+        "DOMAIN-SUFFIX,chase.com",
+        "DOMAIN-SUFFIX,chasepaymentech.com",
+        "DOMAIN-SUFFIX,checkfreeweb.com",
+        "DOMAIN-SUFFIX,citi.com",
+        "DOMAIN-SUFFIX,citibank.com",
+        "DOMAIN-SUFFIX,citibankonline.com",
+        "DOMAIN-SUFFIX,citicards.com",
+        "DOMAIN-SUFFIX,citidirect.com",
+        "DOMAIN-SUFFIX,citigroup.com",
+        "DOMAIN-SUFFIX,citizensaccess.com",
+        "DOMAIN-SUFFIX,citizensbank.com",
+        "DOMAIN-SUFFIX,citizensbankonline.com",
+        "DOMAIN-SUFFIX,comerica.com",
+        "DOMAIN-SUFFIX,discover.com",
+        "DOMAIN-SUFFIX,discoverbank.com",
+        "DOMAIN-SUFFIX,discoverbiz.com",
+        "DOMAIN-SUFFIX,discovercard.com",
+        "DOMAIN-SUFFIX,discoverit.com",
+        "DOMAIN-SUFFIX,discoverpersonalloans.com",
+        "DOMAIN-SUFFIX,dwolla.com",
+        "DOMAIN-SUFFIX,eastwestbank.com",
+        "DOMAIN-SUFFIX,equifax.com",
+        "DOMAIN-SUFFIX,gobankrewards.com",
+        "DOMAIN-SUFFIX,goldmansachs.com",
+        "DOMAIN-SUFFIX,huntington.com",
+        "DOMAIN-SUFFIX,iesnare.com",
+        "DOMAIN-SUFFIX,jpmorgan.com",
+        "DOMAIN-SUFFIX,jpmorganchase.com",
+        "DOMAIN-SUFFIX,key.com",
+        "DOMAIN-SUFFIX,marcus.com",
+        "DOMAIN-SUFFIX,merrilledge.com",
+        "DOMAIN-SUFFIX,ml.com",
+        "DOMAIN-SUFFIX,morganstanley.com",
+        "DOMAIN-SUFFIX,mtb.com",
+        "DOMAIN-SUFFIX,northerntrust.com",
+        "DOMAIN-SUFFIX,payoneer.com",
+        "DOMAIN-SUFFIX,paypal.com",
+        "DOMAIN-SUFFIX,plaid.com",
+        "DOMAIN-SUFFIX,pnc.com",
+        "DOMAIN-SUFFIX,pncpaycard.com",
+        "DOMAIN-SUFFIX,pncprepaidcard.com",
+        "DOMAIN-SUFFIX,popmoney.com",
+        "DOMAIN-SUFFIX,redirect.ultra.me",
+        "DOMAIN-SUFFIX,redpocket.com",
+        "DOMAIN-SUFFIX,regions.com",
+        "DOMAIN-SUFFIX,santanderbank.com",
+        "DOMAIN-SUFFIX,schwab.com",
+        "DOMAIN-SUFFIX,serve.com",
+        "DOMAIN-SUFFIX,sezzle.com",
+        "DOMAIN-SUFFIX,sofi.com",
+        "DOMAIN-SUFFIX,square.com",
+        "DOMAIN-SUFFIX,squareup.com",
+        "DOMAIN-SUFFIX,statestreet.com",
+        "DOMAIN-SUFFIX,stripe.com",
+        "DOMAIN-SUFFIX,suntrust.com",
+        "DOMAIN-SUFFIX,synchronybank.com",
+        "DOMAIN-SUFFIX,t-mobile.com",
+        "DOMAIN-SUFFIX,td.com",
+        "DOMAIN-SUFFIX,tdbank.com",
+        "DOMAIN-SUFFIX,tdcommercialbanking.com",
+        "DOMAIN-SUFFIX,tello.com",
+        "DOMAIN-SUFFIX,truist.com",
+        "DOMAIN-SUFFIX,trydave.com",
+        "DOMAIN-SUFFIX,ultramobile.com",
+        "DOMAIN-SUFFIX,us.hsbc.com",
+        "DOMAIN-SUFFIX,usaa.com",
+        "DOMAIN-SUFFIX,usbank.com",
+        "DOMAIN-SUFFIX,usbankreliacard.com",
+        "DOMAIN-SUFFIX,varomoney.com",
+        "DOMAIN-SUFFIX,velobank.com",
+        "DOMAIN-SUFFIX,venmo.com",
+        "DOMAIN-SUFFIX,wellsfargo.com",
+        "DOMAIN-SUFFIX,wellsfargoadvisors.com",
+        "DOMAIN-SUFFIX,wepay.com",
+        "DOMAIN-SUFFIX,wf.com",
+        "DOMAIN-SUFFIX,wise.com",
+        "DOMAIN-SUFFIX,xoom.com",
+        "DOMAIN-SUFFIX,zellepay.com",
+        "DOMAIN-SUFFIX,zionsbank.com"
       ]
     }
-  ],
+  },
+  "content_id": "e82839636a262135f4df7376f4797d312265cd5578ad01097fbe72a93f3fb376",
+  "domain_count": 103,
   "excluded": [
     {
       "reason": "Unbounded substring matching is outside the domain namespace policy",
@@ -337,645 +1823,27 @@
     }
   ],
   "files": {
-    "COVERAGE.md": "ec5e22d458fe05167ca46e0253b7473631a7f0eed81063aaa61ff13461ec4020",
     "LICENSES/accademia.txt": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
     "LICENSES/missuo.txt": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
-    "README.md": "a56ef405f35c090688837045505cdc16da488cfd33d7c7cc9bbd33048b17f1ee",
-    "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
-    "policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
+    "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
+    "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
+    "README.md": "9dca77a1374775714fc1fb0482968a1ca5dd3130941d456e53b6ebe66fa6b4ab",
+    "overrides.json": "a9550036db0a4926ae4bd292139edd0e8f6aceb096458d6624fdc274c1bf1a58",
+    "us-bank-COVERAGE.md": "ec5e22d458fe05167ca46e0253b7473631a7f0eed81063aaa61ff13461ec4020",
+    "us-bank-policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
     "us-bank.json": "67ed732281abeb2a8856e61c723b180bcb50bc5db4c75e770d9c790e2f624725",
-    "us-bank.srs": "84d66bd66a14f22b67f4b7784b68d31a7885f23a16382c58bfb28f7755799539"
+    "us-bank.srs": "84d66bd66a14f22b67f4b7784b68d31a7885f23a16382c58bfb28f7755799539",
+    "us-mobile-COVERAGE.md": "bcacdcd0b51de55950081fb671a54fe34af263f954db895d24b5c9d92a7fe5c3",
+    "us-mobile-policy.json": "b143411de00225a77268a8034914c7de87391382bbe058afb58a09f6e3c2c2b6",
+    "us-mobile.json": "f7eb2a00a579760699e8b5fd1fbdec44adb9bec4dd91cfc46ba760bfbcb18408",
+    "us-mobile.srs": "b675f08d8ca3b4d4f60a22f040f849ec7b7db1d830ee85ba8fe11e0999ed6f6f",
+    "us-residential.json": "2002e945747a21eb4e70b6e9919c9d1e518f3ccda237007c490f7f0dbbc3da1a",
+    "us-residential.srs": "69f082b8748e4103d6d8975fb2f1aa0f8a3fb1a3bca826be134c5151bf976ff5"
   },
-  "override_resolution": {
-    "category": "us-bank",
-    "directives": [],
-    "observations": []
-  },
-  "policy_version": 5,
-  "rule_count": 98,
-  "rule_provenance": {
-    "DOMAIN,us.hsbc.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,53.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,aexp-static.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,aexp.com": {
-      "basis": {
-        "checked_at": "2026-10-23",
-        "evidence": [
-          "https://www.americanexpress.com/us/account/add-us-to-your-address-book.html"
-        ],
-        "reason": "Amex-owned account/communication namespace; official US address-book page confirms related namespace, not exhaustive App evidence",
-        "rule": "DOMAIN-SUFFIX,aexp.com"
-      },
-      "sources": []
-    },
-    "DOMAIN-SUFFIX,ally.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,americanexpress.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,amex.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,amextravel.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,authorize.net": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bac.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,baml.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bankofamerica.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,bbt.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bill.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bmo.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bmoharris.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,bnymellon.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,bofa.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,braintreepayments.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,capitalone.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,capitalone360.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,cash.app": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,cashedge.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,cathaybank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,chase.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,chasepaymentech.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,checkfreeweb.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,citi.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,citibank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,citibankonline.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,citicards.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,citidirect.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,citigroup.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,citizensaccess.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,citizensbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,citizensbankonline.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,comerica.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,discover.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,discoverbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,discoverbiz.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,discovercard.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,discoverit.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,discoverpersonalloans.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,dwolla.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,eastwestbank.com": {
-      "basis": {
-        "checked_at": "2026-10-23",
-        "evidence": [
-          "https://www.eastwestbank.com/en/personal-banking"
-        ],
-        "reason": "Correct East West Bank namespace, replacing upstream eastwest.com misidentification",
-        "rule": "DOMAIN-SUFFIX,eastwestbank.com"
-      },
-      "sources": []
-    },
-    "DOMAIN-SUFFIX,equifax.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,gobankrewards.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,goldmansachs.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,huntington.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,iesnare.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,jpmorgan.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,jpmorganchase.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,key.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,marcus.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,merrilledge.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,ml.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,morganstanley.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,mtb.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,northerntrust.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,payoneer.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,paypal.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,plaid.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,pnc.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,pncpaycard.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,pncprepaidcard.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,popmoney.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,regions.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,santanderbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,schwab.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,serve.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,sezzle.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,sofi.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,square.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,squareup.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,statestreet.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,stripe.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,suntrust.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,synchronybank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,td.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,tdbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,tdcommercialbanking.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,truist.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,trydave.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,us.hsbc.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,usaa.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,usbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,usbankreliacard.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,varomoney.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,velobank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,venmo.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,wellsfargo.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo",
-        "accademia"
-      ]
-    },
-    "DOMAIN-SUFFIX,wellsfargoadvisors.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,wepay.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,wf.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,wise.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,xoom.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,zellepay.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "missuo"
-      ]
-    },
-    "DOMAIN-SUFFIX,zionsbank.com": {
-      "basis": "source-scoped domain ingestion",
-      "sources": [
-        "accademia"
-      ]
-    }
-  },
+  "policy_version": 1,
+  "rule_count": 104,
   "rules": [
+    "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
     "DOMAIN,us.hsbc.com",
     "DOMAIN-SUFFIX,53.com",
     "DOMAIN-SUFFIX,aexp-static.com",
@@ -1042,6 +1910,8 @@
     "DOMAIN-SUFFIX,pncpaycard.com",
     "DOMAIN-SUFFIX,pncprepaidcard.com",
     "DOMAIN-SUFFIX,popmoney.com",
+    "DOMAIN-SUFFIX,redirect.ultra.me",
+    "DOMAIN-SUFFIX,redpocket.com",
     "DOMAIN-SUFFIX,regions.com",
     "DOMAIN-SUFFIX,santanderbank.com",
     "DOMAIN-SUFFIX,schwab.com",
@@ -1054,11 +1924,14 @@
     "DOMAIN-SUFFIX,stripe.com",
     "DOMAIN-SUFFIX,suntrust.com",
     "DOMAIN-SUFFIX,synchronybank.com",
+    "DOMAIN-SUFFIX,t-mobile.com",
     "DOMAIN-SUFFIX,td.com",
     "DOMAIN-SUFFIX,tdbank.com",
     "DOMAIN-SUFFIX,tdcommercialbanking.com",
+    "DOMAIN-SUFFIX,tello.com",
     "DOMAIN-SUFFIX,truist.com",
     "DOMAIN-SUFFIX,trydave.com",
+    "DOMAIN-SUFFIX,ultramobile.com",
     "DOMAIN-SUFFIX,us.hsbc.com",
     "DOMAIN-SUFFIX,usaa.com",
     "DOMAIN-SUFFIX,usbank.com",
@@ -1075,14 +1948,15 @@
     "DOMAIN-SUFFIX,zellepay.com",
     "DOMAIN-SUFFIX,zionsbank.com"
   ],
-  "rules_semantics": "positive terms only; exclusions and higher-scope precedence are encoded in effective_rules",
   "sources": [
     {
       "commit": "b3f1f2d401943a88d606ad3e90b494eae1b64b42",
       "effective_rule_count": 79,
+      "extraction": {},
       "id": "missuo",
       "license": "MIT",
       "license_sha256": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
+      "outside_scope": [],
       "rule_count": 105,
       "sha256": "862c2914e0a846ea288ff0d44fa49ac16fad9075e8de41dff783fbdc11f5b8a0",
       "url": "https://raw.githubusercontent.com/missuo/surge_rules/b3f1f2d401943a88d606ad3e90b494eae1b64b42/rule/BankUS.list"
@@ -1090,30 +1964,85 @@
     {
       "commit": "0dff7831cdebc155ef57998fcd88ed20d977f788",
       "effective_rule_count": 39,
+      "extraction": {},
       "id": "accademia",
       "license": "MIT",
       "license_sha256": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
+      "outside_scope": [],
       "rule_count": 45,
       "sha256": "e029019f0a2612612127b0872be0fb17cf0e667af6abf6eeccd6663ace126eef",
       "url": "https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/0dff7831cdebc155ef57998fcd88ed20d977f788/Bank/BankUS.yaml"
-    }
-  ],
-  "supplemental": [
-    {
-      "checked_at": "2026-10-23",
-      "evidence": [
-        "https://www.eastwestbank.com/en/personal-banking"
-      ],
-      "reason": "Correct East West Bank namespace, replacing upstream eastwest.com misidentification",
-      "rule": "DOMAIN-SUFFIX,eastwestbank.com"
     },
     {
-      "checked_at": "2026-10-23",
-      "evidence": [
-        "https://www.americanexpress.com/us/account/add-us-to-your-address-book.html"
+      "commit": "93c84552802d3541e4359638f07075d32b7014f0",
+      "effective_rule_count": 2,
+      "extraction": {
+        "domain_scope": [
+          "ultramobile.com",
+          "redirect.ultra.me"
+        ],
+        "section": {
+          "end": "# 英国 SIM 卡 Wi-Fi Calling 配置规则",
+          "start": "# 美国 SIM 卡 Wi-Fi Calling 配置规则"
+        },
+        "services": [
+          "Ultra website/account redirect"
+        ]
+      },
+      "id": "mobile-levi",
+      "license": "MIT",
+      "license_sha256": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
+      "outside_scope": [
+        "DOMAIN-KEYWORD,t-mobile",
+        "DOMAIN-KEYWORD,ultramobile",
+        "DOMAIN-SUFFIX,crl.t-mobile.com",
+        "DOMAIN-SUFFIX,depdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,eas3.msg.t-mobile.com",
+        "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN-SUFFIX,mascns.t-mobile.com",
+        "DOMAIN-SUFFIX,ns.sipgeo.t-mobile.com",
+        "DOMAIN-SUFFIX,optimizely.com",
+        "IP-CIDR,206.29.177.36/32,no-resolve",
+        "IP-CIDR,208.54.0.0/16,no-resolve",
+        "IP-CIDR,66.94.0.0/19,no-resolve"
       ],
-      "reason": "Amex-owned account/communication namespace; official US address-book page confirms related namespace, not exhaustive App evidence",
-      "rule": "DOMAIN-SUFFIX,aexp.com"
+      "rule_count": 2,
+      "sha256": "6bada21d469180f63f2883bf496b034dfd8e42eba62944ff93d54793b332c04b",
+      "url": "https://raw.githubusercontent.com/czy13724/Surge/93c84552802d3541e4359638f07075d32b7014f0/Rules/esimswificalling.list"
+    },
+    {
+      "commit": "76db75e6f1e70022b48c866a470f1a23c330fa60",
+      "effective_rule_count": 1,
+      "extraction": {
+        "domain_scope": [
+          "t-mobile.com"
+        ],
+        "section": {
+          "end": "# Calling & RTP tunnel",
+          "start": "# T-Mobile"
+        },
+        "services": [
+          "T-Mobile website/account"
+        ]
+      },
+      "id": "mobile-ous",
+      "license": "MIT",
+      "license_sha256": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
+      "outside_scope": [
+        "DOMAIN,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
+        "DOMAIN,t-mobile.idemia.io",
+        "IP-CIDR,206.29.177.36/32,no-resolve",
+        "IP-CIDR,208.54.0.0/16,no-resolve",
+        "IP-CIDR,66.94.0.0/19,no-resolve"
+      ],
+      "rule_count": 1,
+      "sha256": "0679c307314a7e7e6a61c218f5ed0c438a93ab89fef104786383048c579ef0f8",
+      "url": "https://raw.githubusercontent.com/ous50/Surge/76db75e6f1e70022b48c866a470f1a23c330fa60/wifi-calling/us.conf"
     }
   ]
 }

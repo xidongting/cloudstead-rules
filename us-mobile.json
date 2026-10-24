@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "dnc8pt3q0ulny.cloudfront.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "redirect.ultra.me",
+        "redpocket.com",
+        "t-mobile.com",
+        "tello.com",
+        "ultramobile.com"
+      ]
+    }
+  ],
+  "version": 1
+}
