@@ -1,12 +1,12 @@
 {
-  "built_at": "2026-10-24T10:08:50.682910+00:00",
+  "built_at": "2026-10-24T10:12:23.211172+00:00",
   "category": "us-bank",
   "compiler": {
     "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
     "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
     "version": "v1.15.0-alpha.12"
   },
-  "content_id": "15ee8e0e5724ee9e2141bf4799b77ea479863cacae3caefb327efe2ef64d4646",
+  "content_id": "036e50408e9358fa9534d890bef08624cb2310ddca7bf6d51b08f18a96b10443",
   "domain_count": 97,
   "effective_rules": [
     {
@@ -340,7 +340,7 @@
     "COVERAGE.md": "ec5e22d458fe05167ca46e0253b7473631a7f0eed81063aaa61ff13461ec4020",
     "LICENSES/accademia.txt": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
     "LICENSES/missuo.txt": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
-    "README.md": "a9a8390ed88a1fcf2928f1a9ddb46150e95f76edcf761fd773f4a536727c3e59",
+    "README.md": "a56ef405f35c090688837045505cdc16da488cfd33d7c7cc9bbd33048b17f1ee",
     "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
     "policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
     "us-bank.json": "67ed732281abeb2a8856e61c723b180bcb50bc5db4c75e770d9c790e2f624725",
