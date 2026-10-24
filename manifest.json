@@ -1,15 +1,15 @@
 {
-  "built_at": "2026-10-24T12:37:33.860758+00:00",
+  "built_at": "2026-10-24T12:48:35.719284+00:00",
   "categories": {
     "us-bank": {
-      "built_at": "2026-10-24T12:37:06.178761+00:00",
+      "built_at": "2026-10-24T12:47:55.837108+00:00",
       "category": "us-bank",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "aceaaaeed2f29ef2dd8d708ac965e5f72d901d5742a67303895e4c9a5df980b8",
+      "content_id": "7e2a43cd36c39893398dffb60f00ea39055d9f818a0505a50cf2247416b5d6ec",
       "domain_count": 97,
       "effective_rules": [
         {
@@ -1127,14 +1127,14 @@
       ]
     },
     "us-mobile": {
-      "built_at": "2026-10-24T12:37:10.604005+00:00",
+      "built_at": "2026-10-24T12:48:01.294292+00:00",
       "category": "us-mobile",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "17591015fe9aa84df3e572f1d024a0850db144ddc6f2931f0690c74ccdfaa3ec",
+      "content_id": "bfe49cf329dc56a5cfb839447d2d8fe0c49163a25a9c59a451257954a7abda32",
       "domain_count": 14,
       "effective_rules": [
         {
@@ -1200,7 +1200,7 @@
       ],
       "excluded": [],
       "files": {
-        "COVERAGE.md": "bcacdcd0b51de55950081fb671a54fe34af263f954db895d24b5c9d92a7fe5c3",
+        "COVERAGE.md": "9f3054ebd8dc954afc75d9761557fe6aedba2528426557a4b589b590b1c07914",
         "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
         "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
         "README.md": "817752d23030e37b28d437650387a533a800140cd6a6a82e89ccbac2353575c5",
@@ -1906,7 +1906,7 @@
       ]
     }
   },
-  "content_id": "d42ff17f9928c28df18400158c9d0014ac4c74ba383d6212cfac6aa641ac09cf",
+  "content_id": "05bcbd0a963b6b2f276aad773c7d169f40c99111b7d167f82236a46b18a39cb0",
   "domain_count": 111,
   "excluded": [
     {
@@ -2139,7 +2139,7 @@
     "us-bank-policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
     "us-bank.json": "67ed732281abeb2a8856e61c723b180bcb50bc5db4c75e770d9c790e2f624725",
     "us-bank.srs": "84d66bd66a14f22b67f4b7784b68d31a7885f23a16382c58bfb28f7755799539",
-    "us-mobile-COVERAGE.md": "bcacdcd0b51de55950081fb671a54fe34af263f954db895d24b5c9d92a7fe5c3",
+    "us-mobile-COVERAGE.md": "9f3054ebd8dc954afc75d9761557fe6aedba2528426557a4b589b590b1c07914",
     "us-mobile-policy.json": "6c74c254317a1d30a1817c8936ae50ac69a85eed074836b80eb33dcd89ffa7c5",
     "us-mobile.json": "0952febb690451a18230c2e814d8d3215a5589ef5d29024211ada6a4f1416c38",
     "us-mobile.srs": "9ffa6f10cf5b6e3b23ac69eef09239c11815219270c96524b441c95b512472d8",
