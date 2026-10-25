@@ -1,15 +1,15 @@
 {
-  "built_at": "2026-10-24T12:48:35.719284+00:00",
+  "built_at": "2026-10-25T07:12:32.832943+00:00",
   "categories": {
     "us-bank": {
-      "built_at": "2026-10-24T12:47:55.837108+00:00",
+      "built_at": "2026-10-25T07:12:01.119631+00:00",
       "category": "us-bank",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "7e2a43cd36c39893398dffb60f00ea39055d9f818a0505a50cf2247416b5d6ec",
+      "content_id": "8975d4fb43b20bc29425f07d99c4e410761f4d4e83182136d51355c3e22783da",
       "domain_count": 97,
       "effective_rules": [
         {
@@ -1127,14 +1127,14 @@
       ]
     },
     "us-mobile": {
-      "built_at": "2026-10-24T12:48:01.294292+00:00",
+      "built_at": "2026-10-25T07:12:05.917397+00:00",
       "category": "us-mobile",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "bfe49cf329dc56a5cfb839447d2d8fe0c49163a25a9c59a451257954a7abda32",
+      "content_id": "aa7ab8262124b2f0dcb29dbb8cd16fab11bbb4480f14d3d5ec23c5a4efa95462",
       "domain_count": 14,
       "effective_rules": [
         {
@@ -1906,7 +1906,7 @@
       ]
     }
   },
-  "content_id": "05bcbd0a963b6b2f276aad773c7d169f40c99111b7d167f82236a46b18a39cb0",
+  "content_id": "7f7463059caa494cb3049400ff2ce994f7b152154698ff26b57233fb084a5a30",
   "domain_count": 111,
   "excluded": [
     {
