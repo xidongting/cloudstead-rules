@@ -6,7 +6,7 @@
 
 - 原有七家机构的登录、别名、卡片、资产域与历史迁移域，不再只收录官网根域。
 - US Bank、PNC、Truist、TD、Marcus/Goldman Sachs、Ally、Fifth Third、Citizens、KeyBank、Regions、Huntington、M&T、USAA、BMO、SoFi、Synchrony、Cathay、Varo、Velo、Dave、Northern Trust、Santander、Comerica、Zions 等上游命名空间。
-- 历史广覆盖还包含投资、支付、转账、账户关联与信用服务，如 Merrill、Schwab、Plaid、Zelle、CheckFree、CashEdge、Equifax、Wise。当前并非纯银行名单；本次仅移出下述 PayPal 组，其余非银行服务尚未逐项收窄。
+- 当前集合优先保留银行、银行直营卡片/网银及银行品牌域名。支付、转账、账户聚合、账单支付、信用评估、风控和商户基础设施不属于本集合；明确排除项见 `policy.json` 的 `blocked_suffixes`。投资/券商及银行关联品牌仍需按具体所有权和业务入口逐项复核，不自动等同于零售银行。
 
 `policy.json` 保存来源范围、排除/更正及补充理由，不复制上游全量批准名单。每条实际摄取规则的来源和过滤影响由对应 manifest 记录。社区提供的域名是覆盖候选证据，不是已经实测每个 App、确认所有权或当前服务可用性的保证；历史域不代表服务仍开放。
 
@@ -28,8 +28,8 @@
 
 ## 仍明确排除
 
-- 按用户指令，从 `us-bank` 排除 `paypal.com`、`braintreepayments.com`、`venmo.com`、`xoom.com` 四个后缀及其子域。指令保存在 `ruleset/overrides.json`，优先于上游和本地补充，合一版 `us-residential` 继承排除结果。这是路由分类选择，不是 PayPal 组无需风控或银行必须家宽的结论。未宣称排除了该集团所有未来或未知域名。
-- 产物用逻辑排除保留原始候选及来源；上述字符串可能仍出现在 JSON／manifest 中，是否命中以 `effective_rules` 和编译产物实际匹配为准。`rule_count`／`domain_count` 是正向候选计数，不因负向排除直接减四。
+- `policy.json` 通过 `blocked_suffixes` 排除支付、转账、账户聚合、账单支付、信用评估、风控及商户基础设施命名空间，包括 PayPal、Braintree、Venmo、Xoom、Plaid、Zelle、Wise、Stripe、Square、Equifax 等。它们保留在来源排除记录中，不进入最终有效银行规则；合一版 `us-residential` 继承过滤结果。
+- 这是路由分类边界，不是这些服务无需风控或银行必须家宽的结论。新共享服务不能因为上游收录就自动进入 `us-bank`；需有银行专用主机证据后再加补充项。
 
 - 以银行名做任意子串的关键词：可能命中相似、无关或恶意域名。已有银行域使用精确/后缀规则。
 - 无关联证据的 AutoNavi、eBay 等一般服务。

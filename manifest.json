@@ -1,149 +1,98 @@
 {
-  "built_at": "2026-11-03T09:06:52.692189+00:00",
+  "built_at": "2026-11-03T10:05:02.773154+00:00",
   "categories": {
     "us-bank": {
-      "built_at": "2026-11-03T09:06:07.731137+00:00",
+      "built_at": "2026-11-03T10:04:35.161364+00:00",
       "category": "us-bank",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "33a4eb97ff727eb5b66d72a7e15a5dacffed0c9499e79c6e5cd9ac1eb10dce73",
-      "domain_count": 97,
+      "content_id": "dc6f70172345879691c4e8af9bfdfe62fb4984fb75071fdd93dacb5cf0256383",
+      "domain_count": 73,
       "effective_rules": [
         {
-          "mode": "and",
-          "rules": [
-            {
-              "mode": "or",
-              "rules": [
-                {
-                  "domain": [
-                    "us.hsbc.com"
-                  ]
-                },
-                {
-                  "domain_suffix": [
-                    "53.com",
-                    "aexp-static.com",
-                    "aexp.com",
-                    "ally.com",
-                    "americanexpress.com",
-                    "amex.com",
-                    "amextravel.com",
-                    "authorize.net",
-                    "bac.com",
-                    "baml.com",
-                    "bankofamerica.com",
-                    "bbt.com",
-                    "bill.com",
-                    "bmo.com",
-                    "bmoharris.com",
-                    "bnymellon.com",
-                    "bofa.com",
-                    "braintreepayments.com",
-                    "capitalone.com",
-                    "capitalone360.com",
-                    "cash.app",
-                    "cashedge.com",
-                    "cathaybank.com",
-                    "chase.com",
-                    "chasepaymentech.com",
-                    "checkfreeweb.com",
-                    "citi.com",
-                    "citibank.com",
-                    "citibankonline.com",
-                    "citicards.com",
-                    "citidirect.com",
-                    "citigroup.com",
-                    "citizensaccess.com",
-                    "citizensbank.com",
-                    "citizensbankonline.com",
-                    "comerica.com",
-                    "discover.com",
-                    "discoverbank.com",
-                    "discoverbiz.com",
-                    "discovercard.com",
-                    "discoverit.com",
-                    "discoverpersonalloans.com",
-                    "dwolla.com",
-                    "eastwestbank.com",
-                    "equifax.com",
-                    "gobankrewards.com",
-                    "goldmansachs.com",
-                    "huntington.com",
-                    "iesnare.com",
-                    "jpmorgan.com",
-                    "jpmorganchase.com",
-                    "key.com",
-                    "marcus.com",
-                    "merrilledge.com",
-                    "ml.com",
-                    "morganstanley.com",
-                    "mtb.com",
-                    "northerntrust.com",
-                    "payoneer.com",
-                    "paypal.com",
-                    "plaid.com",
-                    "pnc.com",
-                    "pncpaycard.com",
-                    "pncprepaidcard.com",
-                    "popmoney.com",
-                    "regions.com",
-                    "santanderbank.com",
-                    "schwab.com",
-                    "serve.com",
-                    "sezzle.com",
-                    "sofi.com",
-                    "square.com",
-                    "squareup.com",
-                    "statestreet.com",
-                    "stripe.com",
-                    "suntrust.com",
-                    "synchronybank.com",
-                    "td.com",
-                    "tdbank.com",
-                    "tdcommercialbanking.com",
-                    "truist.com",
-                    "trydave.com",
-                    "us.hsbc.com",
-                    "usaa.com",
-                    "usbank.com",
-                    "usbankreliacard.com",
-                    "varomoney.com",
-                    "velobank.com",
-                    "venmo.com",
-                    "wellsfargo.com",
-                    "wellsfargoadvisors.com",
-                    "wepay.com",
-                    "wf.com",
-                    "wise.com",
-                    "xoom.com",
-                    "zellepay.com",
-                    "zionsbank.com"
-                  ]
-                }
-              ],
-              "type": "logical"
-            },
-            {
-              "invert": true,
-              "mode": "or",
-              "rules": [
-                {
-                  "domain_suffix": [
-                    "braintreepayments.com",
-                    "paypal.com",
-                    "venmo.com",
-                    "xoom.com"
-                  ]
-                }
-              ],
-              "type": "logical"
-            }
-          ],
-          "type": "logical"
+          "domain": [
+            "us.hsbc.com"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "53.com",
+            "aexp-static.com",
+            "aexp.com",
+            "ally.com",
+            "americanexpress.com",
+            "amex.com",
+            "amextravel.com",
+            "bac.com",
+            "baml.com",
+            "bankofamerica.com",
+            "bbt.com",
+            "bmo.com",
+            "bmoharris.com",
+            "bnymellon.com",
+            "bofa.com",
+            "capitalone.com",
+            "capitalone360.com",
+            "cathaybank.com",
+            "chase.com",
+            "citi.com",
+            "citibank.com",
+            "citibankonline.com",
+            "citicards.com",
+            "citidirect.com",
+            "citigroup.com",
+            "citizensaccess.com",
+            "citizensbank.com",
+            "citizensbankonline.com",
+            "comerica.com",
+            "discover.com",
+            "discoverbank.com",
+            "discoverbiz.com",
+            "discovercard.com",
+            "discoverit.com",
+            "discoverpersonalloans.com",
+            "eastwestbank.com",
+            "gobankrewards.com",
+            "goldmansachs.com",
+            "huntington.com",
+            "jpmorgan.com",
+            "jpmorganchase.com",
+            "key.com",
+            "marcus.com",
+            "merrilledge.com",
+            "ml.com",
+            "morganstanley.com",
+            "mtb.com",
+            "northerntrust.com",
+            "pnc.com",
+            "pncpaycard.com",
+            "pncprepaidcard.com",
+            "regions.com",
+            "santanderbank.com",
+            "schwab.com",
+            "serve.com",
+            "sofi.com",
+            "statestreet.com",
+            "suntrust.com",
+            "synchronybank.com",
+            "td.com",
+            "tdbank.com",
+            "tdcommercialbanking.com",
+            "truist.com",
+            "us.hsbc.com",
+            "usaa.com",
+            "usbank.com",
+            "usbankreliacard.com",
+            "varomoney.com",
+            "velobank.com",
+            "wellsfargo.com",
+            "wellsfargoadvisors.com",
+            "wf.com",
+            "zionsbank.com"
+          ]
         }
       ],
       "excluded": [
@@ -198,6 +147,13 @@
           ]
         },
         {
+          "reason": "Payment gateway, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,authorize.net",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
           "reason": "Unrelated map service, not bank dependency evidence",
           "rule": "DOMAIN-SUFFIX,autonavi.com",
           "sources": [
@@ -212,8 +168,57 @@
           ]
         },
         {
+          "reason": "Business payments platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,bill.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment processor, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,braintreepayments.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Consumer payment app, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,cash.app",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Account aggregation/transfer service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,cashedge.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Merchant payment processing, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,chasepaymentech.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Bill payment service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,checkfreeweb.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
           "reason": "Shared tracking root; require bank-specific hostname evidence",
           "rule": "DOMAIN-SUFFIX,demdex.net",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment network, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,dwolla.com",
           "sources": [
             "missuo"
           ]
@@ -233,10 +238,24 @@
           ]
         },
         {
+          "reason": "Credit bureau, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,equifax.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
           "reason": "Unverified probable misidentification; HSBC US subtree included instead",
           "rule": "DOMAIN-SUFFIX,hsbc.com.us",
           "sources": [
             "accademia"
+          ]
+        },
+        {
+          "reason": "Fraud/risk service shared by many sites, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,iesnare.com",
+          "sources": [
+            "missuo"
           ]
         },
         {
@@ -268,6 +287,34 @@
           ]
         },
         {
+          "reason": "Payments platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,payoneer.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,paypal.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Account-linking aggregator, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,plaid.com",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Person-to-person payment service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,popmoney.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
           "reason": "Shared analytics root; require bank-specific hostname evidence",
           "rule": "DOMAIN-SUFFIX,quantummetric.com",
           "sources": [
@@ -291,6 +338,76 @@
         {
           "reason": "Shared general analytics root; no bank-specific host evidence",
           "rule": "DOMAIN-SUFFIX,segment.io",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Buy-now-pay-later service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,sezzle.com",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Merchant/payment platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,square.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Merchant/payment platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,squareup.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment processor, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,stripe.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Fintech service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,trydave.com",
+          "sources": [
+            "accademia"
+          ]
+        },
+        {
+          "reason": "Payment app, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,venmo.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment platform, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,wepay.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Money-transfer service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,wise.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Money-transfer service, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,xoom.com",
+          "sources": [
+            "missuo"
+          ]
+        },
+        {
+          "reason": "Payment network, not a bank namespace",
+          "rule": "DOMAIN-SUFFIX,zellepay.com",
           "sources": [
             "missuo"
           ]
@@ -367,61 +484,24 @@
         }
       ],
       "files": {
-        "COVERAGE.md": "93e759a2c031650bf303c2cfc0ed91162332e040cf9700be5ab561d756123b85",
+        "COVERAGE.md": "7fea4ef5125fdd79c929e03fee30a35548ab277f5bdcb9702c25d95592cd2a4a",
         "LICENSES/accademia.txt": "827b24eaf4e08cc4fbe9b77f502acdd54ce5ff01e9d74f31b84ef8a0c37aa0c7",
         "LICENSES/missuo.txt": "b9db086f0fbc435770cddc8d5840162d651ce20d229d0fc31cce966b2aa7f5c7",
         "README.md": "a56ef405f35c090688837045505cdc16da488cfd33d7c7cc9bbd33048b17f1ee",
-        "overrides.json": "b19988f2c88bc2cf35e695dca2963cda5e766c612072f76f5ecd31cf0ca3e367",
-        "policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
-        "us-bank.json": "335aae12d0456832d8a8363b3e5ec1fb856c6b45ef12f3b6cd9a4b140cbcad7e",
-        "us-bank.srs": "c24432c2bf5f44dd2a23f0f2326941cf32f0b7c977ac9152c753894c31124390"
+        "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
+        "policy.json": "efab82742fb81029d971bac226c09cc3d2bd685795af35d6fc302591fd4a9ec8",
+        "us-bank.json": "e01bfb92e97fc601e7af5ecf2aebce3f4a405f5b6399d7d73eeac437e34f9404",
+        "us-bank.srs": "3755a13a8b283835708b5a8b29c09498f1a1a8606de1d7836a447637b294daf2"
       },
       "override_resolution": {
         "category": "us-bank",
-        "directives": [
-          {
-            "action": "exclude",
-            "basis_type": "user-instruction",
-            "date": "2026-11-03",
-            "id": "exclude-paypal-from-bank",
-            "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
-            "rule": "DOMAIN-SUFFIX,paypal.com",
-            "scope": "us-bank"
-          },
-          {
-            "action": "exclude",
-            "basis_type": "user-instruction",
-            "date": "2026-11-03",
-            "id": "exclude-braintree-from-bank",
-            "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
-            "rule": "DOMAIN-SUFFIX,braintreepayments.com",
-            "scope": "us-bank"
-          },
-          {
-            "action": "exclude",
-            "basis_type": "user-instruction",
-            "date": "2026-11-03",
-            "id": "exclude-venmo-from-bank",
-            "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
-            "rule": "DOMAIN-SUFFIX,venmo.com",
-            "scope": "us-bank"
-          },
-          {
-            "action": "exclude",
-            "basis_type": "user-instruction",
-            "date": "2026-11-03",
-            "id": "exclude-xoom-from-bank",
-            "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
-            "rule": "DOMAIN-SUFFIX,xoom.com",
-            "scope": "us-bank"
-          }
-        ],
+        "directives": [],
         "observations": []
       },
       "packet_evidence": [],
       "packet_rule_count": 0,
-      "policy_version": 5,
-      "rule_count": 98,
+      "policy_version": 6,
+      "rule_count": 74,
       "rule_provenance": {
         "DOMAIN,us.hsbc.com": {
           "basis": "source-scoped domain ingestion",
@@ -479,12 +559,6 @@
             "missuo"
           ]
         },
-        "DOMAIN-SUFFIX,authorize.net": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
         "DOMAIN-SUFFIX,bac.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
@@ -505,12 +579,6 @@
           ]
         },
         "DOMAIN-SUFFIX,bbt.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,bill.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo"
@@ -540,12 +608,6 @@
             "missuo"
           ]
         },
-        "DOMAIN-SUFFIX,braintreepayments.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
         "DOMAIN-SUFFIX,capitalone.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
@@ -554,18 +616,6 @@
           ]
         },
         "DOMAIN-SUFFIX,capitalone360.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,cash.app": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,cashedge.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo"
@@ -582,18 +632,6 @@
           "sources": [
             "missuo",
             "accademia"
-          ]
-        },
-        "DOMAIN-SUFFIX,chasepaymentech.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,checkfreeweb.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
           ]
         },
         "DOMAIN-SUFFIX,citi.com": {
@@ -697,12 +735,6 @@
             "missuo"
           ]
         },
-        "DOMAIN-SUFFIX,dwolla.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
         "DOMAIN-SUFFIX,eastwestbank.com": {
           "basis": {
             "checked_at": "2026-10-23",
@@ -713,12 +745,6 @@
             "rule": "DOMAIN-SUFFIX,eastwestbank.com"
           },
           "sources": []
-        },
-        "DOMAIN-SUFFIX,equifax.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
         },
         "DOMAIN-SUFFIX,gobankrewards.com": {
           "basis": "source-scoped domain ingestion",
@@ -738,12 +764,6 @@
           "sources": [
             "missuo",
             "accademia"
-          ]
-        },
-        "DOMAIN-SUFFIX,iesnare.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
           ]
         },
         "DOMAIN-SUFFIX,jpmorgan.com": {
@@ -803,24 +823,6 @@
             "accademia"
           ]
         },
-        "DOMAIN-SUFFIX,payoneer.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,paypal.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,plaid.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "accademia"
-          ]
-        },
         "DOMAIN-SUFFIX,pnc.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
@@ -835,12 +837,6 @@
           ]
         },
         "DOMAIN-SUFFIX,pncprepaidcard.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,popmoney.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo"
@@ -871,25 +867,7 @@
             "missuo"
           ]
         },
-        "DOMAIN-SUFFIX,sezzle.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "accademia"
-          ]
-        },
         "DOMAIN-SUFFIX,sofi.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,square.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,squareup.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo"
@@ -899,12 +877,6 @@
           "basis": "source-scoped domain ingestion",
           "sources": [
             "accademia"
-          ]
-        },
-        "DOMAIN-SUFFIX,stripe.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
           ]
         },
         "DOMAIN-SUFFIX,suntrust.com": {
@@ -941,12 +913,6 @@
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo",
-            "accademia"
-          ]
-        },
-        "DOMAIN-SUFFIX,trydave.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
             "accademia"
           ]
         },
@@ -988,12 +954,6 @@
             "accademia"
           ]
         },
-        "DOMAIN-SUFFIX,venmo.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
         "DOMAIN-SUFFIX,wellsfargo.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
@@ -1007,31 +967,7 @@
             "missuo"
           ]
         },
-        "DOMAIN-SUFFIX,wepay.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
         "DOMAIN-SUFFIX,wf.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,wise.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,xoom.com": {
-          "basis": "source-scoped domain ingestion",
-          "sources": [
-            "missuo"
-          ]
-        },
-        "DOMAIN-SUFFIX,zellepay.com": {
           "basis": "source-scoped domain ingestion",
           "sources": [
             "missuo"
@@ -1053,25 +989,18 @@
         "DOMAIN-SUFFIX,americanexpress.com",
         "DOMAIN-SUFFIX,amex.com",
         "DOMAIN-SUFFIX,amextravel.com",
-        "DOMAIN-SUFFIX,authorize.net",
         "DOMAIN-SUFFIX,bac.com",
         "DOMAIN-SUFFIX,baml.com",
         "DOMAIN-SUFFIX,bankofamerica.com",
         "DOMAIN-SUFFIX,bbt.com",
-        "DOMAIN-SUFFIX,bill.com",
         "DOMAIN-SUFFIX,bmo.com",
         "DOMAIN-SUFFIX,bmoharris.com",
         "DOMAIN-SUFFIX,bnymellon.com",
         "DOMAIN-SUFFIX,bofa.com",
-        "DOMAIN-SUFFIX,braintreepayments.com",
         "DOMAIN-SUFFIX,capitalone.com",
         "DOMAIN-SUFFIX,capitalone360.com",
-        "DOMAIN-SUFFIX,cash.app",
-        "DOMAIN-SUFFIX,cashedge.com",
         "DOMAIN-SUFFIX,cathaybank.com",
         "DOMAIN-SUFFIX,chase.com",
-        "DOMAIN-SUFFIX,chasepaymentech.com",
-        "DOMAIN-SUFFIX,checkfreeweb.com",
         "DOMAIN-SUFFIX,citi.com",
         "DOMAIN-SUFFIX,citibank.com",
         "DOMAIN-SUFFIX,citibankonline.com",
@@ -1088,13 +1017,10 @@
         "DOMAIN-SUFFIX,discovercard.com",
         "DOMAIN-SUFFIX,discoverit.com",
         "DOMAIN-SUFFIX,discoverpersonalloans.com",
-        "DOMAIN-SUFFIX,dwolla.com",
         "DOMAIN-SUFFIX,eastwestbank.com",
-        "DOMAIN-SUFFIX,equifax.com",
         "DOMAIN-SUFFIX,gobankrewards.com",
         "DOMAIN-SUFFIX,goldmansachs.com",
         "DOMAIN-SUFFIX,huntington.com",
-        "DOMAIN-SUFFIX,iesnare.com",
         "DOMAIN-SUFFIX,jpmorgan.com",
         "DOMAIN-SUFFIX,jpmorganchase.com",
         "DOMAIN-SUFFIX,key.com",
@@ -1104,51 +1030,37 @@
         "DOMAIN-SUFFIX,morganstanley.com",
         "DOMAIN-SUFFIX,mtb.com",
         "DOMAIN-SUFFIX,northerntrust.com",
-        "DOMAIN-SUFFIX,payoneer.com",
-        "DOMAIN-SUFFIX,paypal.com",
-        "DOMAIN-SUFFIX,plaid.com",
         "DOMAIN-SUFFIX,pnc.com",
         "DOMAIN-SUFFIX,pncpaycard.com",
         "DOMAIN-SUFFIX,pncprepaidcard.com",
-        "DOMAIN-SUFFIX,popmoney.com",
         "DOMAIN-SUFFIX,regions.com",
         "DOMAIN-SUFFIX,santanderbank.com",
         "DOMAIN-SUFFIX,schwab.com",
         "DOMAIN-SUFFIX,serve.com",
-        "DOMAIN-SUFFIX,sezzle.com",
         "DOMAIN-SUFFIX,sofi.com",
-        "DOMAIN-SUFFIX,square.com",
-        "DOMAIN-SUFFIX,squareup.com",
         "DOMAIN-SUFFIX,statestreet.com",
-        "DOMAIN-SUFFIX,stripe.com",
         "DOMAIN-SUFFIX,suntrust.com",
         "DOMAIN-SUFFIX,synchronybank.com",
         "DOMAIN-SUFFIX,td.com",
         "DOMAIN-SUFFIX,tdbank.com",
         "DOMAIN-SUFFIX,tdcommercialbanking.com",
         "DOMAIN-SUFFIX,truist.com",
-        "DOMAIN-SUFFIX,trydave.com",
         "DOMAIN-SUFFIX,us.hsbc.com",
         "DOMAIN-SUFFIX,usaa.com",
         "DOMAIN-SUFFIX,usbank.com",
         "DOMAIN-SUFFIX,usbankreliacard.com",
         "DOMAIN-SUFFIX,varomoney.com",
         "DOMAIN-SUFFIX,velobank.com",
-        "DOMAIN-SUFFIX,venmo.com",
         "DOMAIN-SUFFIX,wellsfargo.com",
         "DOMAIN-SUFFIX,wellsfargoadvisors.com",
-        "DOMAIN-SUFFIX,wepay.com",
         "DOMAIN-SUFFIX,wf.com",
-        "DOMAIN-SUFFIX,wise.com",
-        "DOMAIN-SUFFIX,xoom.com",
-        "DOMAIN-SUFFIX,zellepay.com",
         "DOMAIN-SUFFIX,zionsbank.com"
       ],
       "rules_semantics": "positive terms only; exclusions and higher-scope precedence are encoded in effective_rules",
       "sources": [
         {
           "commit": "b3f1f2d401943a88d606ad3e90b494eae1b64b42",
-          "effective_rule_count": 79,
+          "effective_rule_count": 58,
           "extraction": {},
           "id": "missuo",
           "license": "MIT",
@@ -1160,7 +1072,7 @@
         },
         {
           "commit": "0dff7831cdebc155ef57998fcd88ed20d977f788",
-          "effective_rule_count": 39,
+          "effective_rule_count": 36,
           "extraction": {},
           "id": "accademia",
           "license": "MIT",
@@ -1191,14 +1103,14 @@
       ]
     },
     "us-mobile": {
-      "built_at": "2026-11-03T09:06:14.193289+00:00",
+      "built_at": "2026-11-03T10:04:40.475683+00:00",
       "category": "us-mobile",
       "compiler": {
         "sha256": "b107528ec7d989333d986573c097d840b9ef1afa9bb177f8eb03e0767f370514",
         "url": "https://github.com/SagerNet/sing-box/releases/download/v1.15.0-alpha.12/sing-box-1.15.0-alpha.12-linux-amd64.tar.gz",
         "version": "v1.15.0-alpha.12"
       },
-      "content_id": "e5d291f7e9437b793eb2583304af7f1bf91fd6ecc5569e2d3222929e2449cf93",
+      "content_id": "aa7ab8262124b2f0dcb29dbb8cd16fab11bbb4480f14d3d5ec23c5a4efa95462",
       "domain_count": 14,
       "effective_rules": [
         {
@@ -1268,7 +1180,7 @@
         "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
         "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
         "README.md": "817752d23030e37b28d437650387a533a800140cd6a6a82e89ccbac2353575c5",
-        "overrides.json": "b19988f2c88bc2cf35e695dca2963cda5e766c612072f76f5ecd31cf0ca3e367",
+        "overrides.json": "10b5abdc9429557e0bacb4af57e752e42a88e2eecdd23db9e192222d80356de9",
         "policy.json": "6c74c254317a1d30a1817c8936ae50ac69a85eed074836b80eb33dcd89ffa7c5",
         "us-mobile.json": "0952febb690451a18230c2e814d8d3215a5589ef5d29024211ada6a4f1416c38",
         "us-mobile.srs": "9ffa6f10cf5b6e3b23ac69eef09239c11815219270c96524b441c95b512472d8"
@@ -1677,7 +1589,7 @@
     },
     "us-residential": {
       "category": "us-residential",
-      "domain_count": 111,
+      "domain_count": 87,
       "effective_rules": [
         {
           "domain": [
@@ -1688,6 +1600,88 @@
             "sentitlement2.mobile.att.net",
             "ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
             "vvm.mobile.att.net"
+          ]
+        },
+        {
+          "domain": [
+            "us.hsbc.com"
+          ]
+        },
+        {
+          "domain_suffix": [
+            "53.com",
+            "aexp-static.com",
+            "aexp.com",
+            "ally.com",
+            "americanexpress.com",
+            "amex.com",
+            "amextravel.com",
+            "bac.com",
+            "baml.com",
+            "bankofamerica.com",
+            "bbt.com",
+            "bmo.com",
+            "bmoharris.com",
+            "bnymellon.com",
+            "bofa.com",
+            "capitalone.com",
+            "capitalone360.com",
+            "cathaybank.com",
+            "chase.com",
+            "citi.com",
+            "citibank.com",
+            "citibankonline.com",
+            "citicards.com",
+            "citidirect.com",
+            "citigroup.com",
+            "citizensaccess.com",
+            "citizensbank.com",
+            "citizensbankonline.com",
+            "comerica.com",
+            "discover.com",
+            "discoverbank.com",
+            "discoverbiz.com",
+            "discovercard.com",
+            "discoverit.com",
+            "discoverpersonalloans.com",
+            "eastwestbank.com",
+            "gobankrewards.com",
+            "goldmansachs.com",
+            "huntington.com",
+            "jpmorgan.com",
+            "jpmorganchase.com",
+            "key.com",
+            "marcus.com",
+            "merrilledge.com",
+            "ml.com",
+            "morganstanley.com",
+            "mtb.com",
+            "northerntrust.com",
+            "pnc.com",
+            "pncpaycard.com",
+            "pncprepaidcard.com",
+            "regions.com",
+            "santanderbank.com",
+            "schwab.com",
+            "serve.com",
+            "sofi.com",
+            "statestreet.com",
+            "suntrust.com",
+            "synchronybank.com",
+            "td.com",
+            "tdbank.com",
+            "tdcommercialbanking.com",
+            "truist.com",
+            "us.hsbc.com",
+            "usaa.com",
+            "usbank.com",
+            "usbankreliacard.com",
+            "varomoney.com",
+            "velobank.com",
+            "wellsfargo.com",
+            "wellsfargoadvisors.com",
+            "wf.com",
+            "zionsbank.com"
           ]
         },
         {
@@ -1738,139 +1732,6 @@
             443,
             993
           ]
-        },
-        {
-          "mode": "and",
-          "rules": [
-            {
-              "mode": "or",
-              "rules": [
-                {
-                  "domain": [
-                    "us.hsbc.com"
-                  ]
-                },
-                {
-                  "domain_suffix": [
-                    "53.com",
-                    "aexp-static.com",
-                    "aexp.com",
-                    "ally.com",
-                    "americanexpress.com",
-                    "amex.com",
-                    "amextravel.com",
-                    "authorize.net",
-                    "bac.com",
-                    "baml.com",
-                    "bankofamerica.com",
-                    "bbt.com",
-                    "bill.com",
-                    "bmo.com",
-                    "bmoharris.com",
-                    "bnymellon.com",
-                    "bofa.com",
-                    "braintreepayments.com",
-                    "capitalone.com",
-                    "capitalone360.com",
-                    "cash.app",
-                    "cashedge.com",
-                    "cathaybank.com",
-                    "chase.com",
-                    "chasepaymentech.com",
-                    "checkfreeweb.com",
-                    "citi.com",
-                    "citibank.com",
-                    "citibankonline.com",
-                    "citicards.com",
-                    "citidirect.com",
-                    "citigroup.com",
-                    "citizensaccess.com",
-                    "citizensbank.com",
-                    "citizensbankonline.com",
-                    "comerica.com",
-                    "discover.com",
-                    "discoverbank.com",
-                    "discoverbiz.com",
-                    "discovercard.com",
-                    "discoverit.com",
-                    "discoverpersonalloans.com",
-                    "dwolla.com",
-                    "eastwestbank.com",
-                    "equifax.com",
-                    "gobankrewards.com",
-                    "goldmansachs.com",
-                    "huntington.com",
-                    "iesnare.com",
-                    "jpmorgan.com",
-                    "jpmorganchase.com",
-                    "key.com",
-                    "marcus.com",
-                    "merrilledge.com",
-                    "ml.com",
-                    "morganstanley.com",
-                    "mtb.com",
-                    "northerntrust.com",
-                    "payoneer.com",
-                    "paypal.com",
-                    "plaid.com",
-                    "pnc.com",
-                    "pncpaycard.com",
-                    "pncprepaidcard.com",
-                    "popmoney.com",
-                    "regions.com",
-                    "santanderbank.com",
-                    "schwab.com",
-                    "serve.com",
-                    "sezzle.com",
-                    "sofi.com",
-                    "square.com",
-                    "squareup.com",
-                    "statestreet.com",
-                    "stripe.com",
-                    "suntrust.com",
-                    "synchronybank.com",
-                    "td.com",
-                    "tdbank.com",
-                    "tdcommercialbanking.com",
-                    "truist.com",
-                    "trydave.com",
-                    "us.hsbc.com",
-                    "usaa.com",
-                    "usbank.com",
-                    "usbankreliacard.com",
-                    "varomoney.com",
-                    "velobank.com",
-                    "venmo.com",
-                    "wellsfargo.com",
-                    "wellsfargoadvisors.com",
-                    "wepay.com",
-                    "wf.com",
-                    "wise.com",
-                    "xoom.com",
-                    "zellepay.com",
-                    "zionsbank.com"
-                  ]
-                }
-              ],
-              "type": "logical"
-            },
-            {
-              "invert": true,
-              "mode": "or",
-              "rules": [
-                {
-                  "domain_suffix": [
-                    "braintreepayments.com",
-                    "paypal.com",
-                    "venmo.com",
-                    "xoom.com"
-                  ]
-                }
-              ],
-              "type": "logical"
-            }
-          ],
-          "type": "logical"
         }
       ],
       "members": [
@@ -1878,7 +1739,7 @@
         "us-mobile"
       ],
       "packet_rule_count": 3,
-      "rule_count": 114,
+      "rule_count": 90,
       "rules": [
         "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
         "DOMAIN,epdg.epc.att.net",
@@ -1895,25 +1756,18 @@
         "DOMAIN-SUFFIX,americanexpress.com",
         "DOMAIN-SUFFIX,amex.com",
         "DOMAIN-SUFFIX,amextravel.com",
-        "DOMAIN-SUFFIX,authorize.net",
         "DOMAIN-SUFFIX,bac.com",
         "DOMAIN-SUFFIX,baml.com",
         "DOMAIN-SUFFIX,bankofamerica.com",
         "DOMAIN-SUFFIX,bbt.com",
-        "DOMAIN-SUFFIX,bill.com",
         "DOMAIN-SUFFIX,bmo.com",
         "DOMAIN-SUFFIX,bmoharris.com",
         "DOMAIN-SUFFIX,bnymellon.com",
         "DOMAIN-SUFFIX,bofa.com",
-        "DOMAIN-SUFFIX,braintreepayments.com",
         "DOMAIN-SUFFIX,capitalone.com",
         "DOMAIN-SUFFIX,capitalone360.com",
-        "DOMAIN-SUFFIX,cash.app",
-        "DOMAIN-SUFFIX,cashedge.com",
         "DOMAIN-SUFFIX,cathaybank.com",
         "DOMAIN-SUFFIX,chase.com",
-        "DOMAIN-SUFFIX,chasepaymentech.com",
-        "DOMAIN-SUFFIX,checkfreeweb.com",
         "DOMAIN-SUFFIX,citi.com",
         "DOMAIN-SUFFIX,citibank.com",
         "DOMAIN-SUFFIX,citibankonline.com",
@@ -1931,16 +1785,13 @@
         "DOMAIN-SUFFIX,discovercard.com",
         "DOMAIN-SUFFIX,discoverit.com",
         "DOMAIN-SUFFIX,discoverpersonalloans.com",
-        "DOMAIN-SUFFIX,dwolla.com",
         "DOMAIN-SUFFIX,eastwestbank.com",
         "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
         "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
-        "DOMAIN-SUFFIX,equifax.com",
         "DOMAIN-SUFFIX,gobankrewards.com",
         "DOMAIN-SUFFIX,goldmansachs.com",
         "DOMAIN-SUFFIX,huntington.com",
-        "DOMAIN-SUFFIX,iesnare.com",
         "DOMAIN-SUFFIX,jpmorgan.com",
         "DOMAIN-SUFFIX,jpmorganchase.com",
         "DOMAIN-SUFFIX,key.com",
@@ -1950,25 +1801,17 @@
         "DOMAIN-SUFFIX,morganstanley.com",
         "DOMAIN-SUFFIX,mtb.com",
         "DOMAIN-SUFFIX,northerntrust.com",
-        "DOMAIN-SUFFIX,payoneer.com",
-        "DOMAIN-SUFFIX,paypal.com",
-        "DOMAIN-SUFFIX,plaid.com",
         "DOMAIN-SUFFIX,pnc.com",
         "DOMAIN-SUFFIX,pncpaycard.com",
         "DOMAIN-SUFFIX,pncprepaidcard.com",
-        "DOMAIN-SUFFIX,popmoney.com",
         "DOMAIN-SUFFIX,redirect.ultra.me",
         "DOMAIN-SUFFIX,redpocket.com",
         "DOMAIN-SUFFIX,regions.com",
         "DOMAIN-SUFFIX,santanderbank.com",
         "DOMAIN-SUFFIX,schwab.com",
         "DOMAIN-SUFFIX,serve.com",
-        "DOMAIN-SUFFIX,sezzle.com",
         "DOMAIN-SUFFIX,sofi.com",
-        "DOMAIN-SUFFIX,square.com",
-        "DOMAIN-SUFFIX,squareup.com",
         "DOMAIN-SUFFIX,statestreet.com",
-        "DOMAIN-SUFFIX,stripe.com",
         "DOMAIN-SUFFIX,suntrust.com",
         "DOMAIN-SUFFIX,synchronybank.com",
         "DOMAIN-SUFFIX,t-mobile.com",
@@ -1977,7 +1820,6 @@
         "DOMAIN-SUFFIX,tdcommercialbanking.com",
         "DOMAIN-SUFFIX,tello.com",
         "DOMAIN-SUFFIX,truist.com",
-        "DOMAIN-SUFFIX,trydave.com",
         "DOMAIN-SUFFIX,ultramobile.com",
         "DOMAIN-SUFFIX,us.hsbc.com",
         "DOMAIN-SUFFIX,usaa.com",
@@ -1985,20 +1827,15 @@
         "DOMAIN-SUFFIX,usbankreliacard.com",
         "DOMAIN-SUFFIX,varomoney.com",
         "DOMAIN-SUFFIX,velobank.com",
-        "DOMAIN-SUFFIX,venmo.com",
         "DOMAIN-SUFFIX,wellsfargo.com",
         "DOMAIN-SUFFIX,wellsfargoadvisors.com",
-        "DOMAIN-SUFFIX,wepay.com",
         "DOMAIN-SUFFIX,wf.com",
-        "DOMAIN-SUFFIX,wise.com",
-        "DOMAIN-SUFFIX,xoom.com",
-        "DOMAIN-SUFFIX,zellepay.com",
         "DOMAIN-SUFFIX,zionsbank.com"
       ]
     }
   },
-  "content_id": "0f9927a1fe7bb89c53b63722ab7f41726945ef27cbefe72837f9c0dda8d7bdf6",
-  "domain_count": 111,
+  "content_id": "59b415bd9e925c2db02c8e2a47b24896b7a4f2d4e9baae39fefe8ca7675f4f72",
+  "domain_count": 87,
   "excluded": [
     {
       "reason": "Unbounded substring matching is outside the domain namespace policy",
@@ -2051,6 +1888,13 @@
       ]
     },
     {
+      "reason": "Payment gateway, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,authorize.net",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
       "reason": "Unrelated map service, not bank dependency evidence",
       "rule": "DOMAIN-SUFFIX,autonavi.com",
       "sources": [
@@ -2065,8 +1909,57 @@
       ]
     },
     {
+      "reason": "Business payments platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,bill.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment processor, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,braintreepayments.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Consumer payment app, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,cash.app",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Account aggregation/transfer service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,cashedge.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Merchant payment processing, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,chasepaymentech.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Bill payment service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,checkfreeweb.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
       "reason": "Shared tracking root; require bank-specific hostname evidence",
       "rule": "DOMAIN-SUFFIX,demdex.net",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment network, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,dwolla.com",
       "sources": [
         "missuo"
       ]
@@ -2086,10 +1979,24 @@
       ]
     },
     {
+      "reason": "Credit bureau, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,equifax.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
       "reason": "Unverified probable misidentification; HSBC US subtree included instead",
       "rule": "DOMAIN-SUFFIX,hsbc.com.us",
       "sources": [
         "accademia"
+      ]
+    },
+    {
+      "reason": "Fraud/risk service shared by many sites, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,iesnare.com",
+      "sources": [
+        "missuo"
       ]
     },
     {
@@ -2121,6 +2028,34 @@
       ]
     },
     {
+      "reason": "Payments platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,payoneer.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,paypal.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Account-linking aggregator, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,plaid.com",
+      "sources": [
+        "accademia"
+      ]
+    },
+    {
+      "reason": "Person-to-person payment service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,popmoney.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
       "reason": "Shared analytics root; require bank-specific hostname evidence",
       "rule": "DOMAIN-SUFFIX,quantummetric.com",
       "sources": [
@@ -2144,6 +2079,76 @@
     {
       "reason": "Shared general analytics root; no bank-specific host evidence",
       "rule": "DOMAIN-SUFFIX,segment.io",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Buy-now-pay-later service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,sezzle.com",
+      "sources": [
+        "accademia"
+      ]
+    },
+    {
+      "reason": "Merchant/payment platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,square.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Merchant/payment platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,squareup.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment processor, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,stripe.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Fintech service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,trydave.com",
+      "sources": [
+        "accademia"
+      ]
+    },
+    {
+      "reason": "Payment app, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,venmo.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment platform, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,wepay.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Money-transfer service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,wise.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Money-transfer service, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,xoom.com",
+      "sources": [
+        "missuo"
+      ]
+    },
+    {
+      "reason": "Payment network, not a bank namespace",
+      "rule": "DOMAIN-SUFFIX,zellepay.com",
       "sources": [
         "missuo"
       ]
@@ -2225,20 +2230,20 @@
     "LICENSES/mobile-levi.txt": "23d06e66804f5c045b5b63e13214a94e320b832006825b5a3f73b71d3a2cf00a",
     "LICENSES/mobile-ous.txt": "c2b6113d50e293e0d963287cde7f2318ba1458183e10a9ae8f174bd88b857192",
     "README.md": "24b5229c0f938dc0c82f568d861d91ff4a1f6987a6d995e1256e40334727da34",
-    "overrides.json": "7b708a00c5438b6e2a5187f2958fadfde4b124c41f6fdb9b4dd00b961229cbb4",
-    "us-bank-COVERAGE.md": "93e759a2c031650bf303c2cfc0ed91162332e040cf9700be5ab561d756123b85",
-    "us-bank-policy.json": "c2e15197482b24904d64d2cbcbfa648ad4482a8b535e983f0e4399fa7ac207ed",
-    "us-bank.json": "335aae12d0456832d8a8363b3e5ec1fb856c6b45ef12f3b6cd9a4b140cbcad7e",
-    "us-bank.srs": "c24432c2bf5f44dd2a23f0f2326941cf32f0b7c977ac9152c753894c31124390",
+    "overrides.json": "a9550036db0a4926ae4bd292139edd0e8f6aceb096458d6624fdc274c1bf1a58",
+    "us-bank-COVERAGE.md": "7fea4ef5125fdd79c929e03fee30a35548ab277f5bdcb9702c25d95592cd2a4a",
+    "us-bank-policy.json": "efab82742fb81029d971bac226c09cc3d2bd685795af35d6fc302591fd4a9ec8",
+    "us-bank.json": "e01bfb92e97fc601e7af5ecf2aebce3f4a405f5b6399d7d73eeac437e34f9404",
+    "us-bank.srs": "3755a13a8b283835708b5a8b29c09498f1a1a8606de1d7836a447637b294daf2",
     "us-mobile-COVERAGE.md": "9f3054ebd8dc954afc75d9761557fe6aedba2528426557a4b589b590b1c07914",
     "us-mobile-policy.json": "6c74c254317a1d30a1817c8936ae50ac69a85eed074836b80eb33dcd89ffa7c5",
     "us-mobile.json": "0952febb690451a18230c2e814d8d3215a5589ef5d29024211ada6a4f1416c38",
     "us-mobile.srs": "9ffa6f10cf5b6e3b23ac69eef09239c11815219270c96524b441c95b512472d8",
-    "us-residential.json": "42e40315e52cb360f82989714a5bb50db6fff1e97433785daeb687fa49d6f166",
-    "us-residential.srs": "cd7bdc995c6f9dfcc51f83480a193c0dcad08edcd11229401c0055d64cc95877"
+    "us-residential.json": "c442d396a2b31934052b00c0fb865bf6409bc058be7b79bde7e743f533cae683",
+    "us-residential.srs": "68d79424ef520b508db830569bffd9d6b221d5a56009f923fc683f3c52f49d64"
   },
   "policy_version": 1,
-  "rule_count": 114,
+  "rule_count": 90,
   "rules": [
     "DOMAIN,dnc8pt3q0ulny.cloudfront.net",
     "DOMAIN,epdg.epc.att.net",
@@ -2255,25 +2260,18 @@
     "DOMAIN-SUFFIX,americanexpress.com",
     "DOMAIN-SUFFIX,amex.com",
     "DOMAIN-SUFFIX,amextravel.com",
-    "DOMAIN-SUFFIX,authorize.net",
     "DOMAIN-SUFFIX,bac.com",
     "DOMAIN-SUFFIX,baml.com",
     "DOMAIN-SUFFIX,bankofamerica.com",
     "DOMAIN-SUFFIX,bbt.com",
-    "DOMAIN-SUFFIX,bill.com",
     "DOMAIN-SUFFIX,bmo.com",
     "DOMAIN-SUFFIX,bmoharris.com",
     "DOMAIN-SUFFIX,bnymellon.com",
     "DOMAIN-SUFFIX,bofa.com",
-    "DOMAIN-SUFFIX,braintreepayments.com",
     "DOMAIN-SUFFIX,capitalone.com",
     "DOMAIN-SUFFIX,capitalone360.com",
-    "DOMAIN-SUFFIX,cash.app",
-    "DOMAIN-SUFFIX,cashedge.com",
     "DOMAIN-SUFFIX,cathaybank.com",
     "DOMAIN-SUFFIX,chase.com",
-    "DOMAIN-SUFFIX,chasepaymentech.com",
-    "DOMAIN-SUFFIX,checkfreeweb.com",
     "DOMAIN-SUFFIX,citi.com",
     "DOMAIN-SUFFIX,citibank.com",
     "DOMAIN-SUFFIX,citibankonline.com",
@@ -2291,16 +2289,13 @@
     "DOMAIN-SUFFIX,discovercard.com",
     "DOMAIN-SUFFIX,discoverit.com",
     "DOMAIN-SUFFIX,discoverpersonalloans.com",
-    "DOMAIN-SUFFIX,dwolla.com",
     "DOMAIN-SUFFIX,eastwestbank.com",
     "DOMAIN-SUFFIX,epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org",
     "DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org",
     "DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org",
-    "DOMAIN-SUFFIX,equifax.com",
     "DOMAIN-SUFFIX,gobankrewards.com",
     "DOMAIN-SUFFIX,goldmansachs.com",
     "DOMAIN-SUFFIX,huntington.com",
-    "DOMAIN-SUFFIX,iesnare.com",
     "DOMAIN-SUFFIX,jpmorgan.com",
     "DOMAIN-SUFFIX,jpmorganchase.com",
     "DOMAIN-SUFFIX,key.com",
@@ -2310,25 +2305,17 @@
     "DOMAIN-SUFFIX,morganstanley.com",
     "DOMAIN-SUFFIX,mtb.com",
     "DOMAIN-SUFFIX,northerntrust.com",
-    "DOMAIN-SUFFIX,payoneer.com",
-    "DOMAIN-SUFFIX,paypal.com",
-    "DOMAIN-SUFFIX,plaid.com",
     "DOMAIN-SUFFIX,pnc.com",
     "DOMAIN-SUFFIX,pncpaycard.com",
     "DOMAIN-SUFFIX,pncprepaidcard.com",
-    "DOMAIN-SUFFIX,popmoney.com",
     "DOMAIN-SUFFIX,redirect.ultra.me",
     "DOMAIN-SUFFIX,redpocket.com",
     "DOMAIN-SUFFIX,regions.com",
     "DOMAIN-SUFFIX,santanderbank.com",
     "DOMAIN-SUFFIX,schwab.com",
     "DOMAIN-SUFFIX,serve.com",
-    "DOMAIN-SUFFIX,sezzle.com",
     "DOMAIN-SUFFIX,sofi.com",
-    "DOMAIN-SUFFIX,square.com",
-    "DOMAIN-SUFFIX,squareup.com",
     "DOMAIN-SUFFIX,statestreet.com",
-    "DOMAIN-SUFFIX,stripe.com",
     "DOMAIN-SUFFIX,suntrust.com",
     "DOMAIN-SUFFIX,synchronybank.com",
     "DOMAIN-SUFFIX,t-mobile.com",
@@ -2337,7 +2324,6 @@
     "DOMAIN-SUFFIX,tdcommercialbanking.com",
     "DOMAIN-SUFFIX,tello.com",
     "DOMAIN-SUFFIX,truist.com",
-    "DOMAIN-SUFFIX,trydave.com",
     "DOMAIN-SUFFIX,ultramobile.com",
     "DOMAIN-SUFFIX,us.hsbc.com",
     "DOMAIN-SUFFIX,usaa.com",
@@ -2345,20 +2331,15 @@
     "DOMAIN-SUFFIX,usbankreliacard.com",
     "DOMAIN-SUFFIX,varomoney.com",
     "DOMAIN-SUFFIX,velobank.com",
-    "DOMAIN-SUFFIX,venmo.com",
     "DOMAIN-SUFFIX,wellsfargo.com",
     "DOMAIN-SUFFIX,wellsfargoadvisors.com",
-    "DOMAIN-SUFFIX,wepay.com",
     "DOMAIN-SUFFIX,wf.com",
-    "DOMAIN-SUFFIX,wise.com",
-    "DOMAIN-SUFFIX,xoom.com",
-    "DOMAIN-SUFFIX,zellepay.com",
     "DOMAIN-SUFFIX,zionsbank.com"
   ],
   "sources": [
     {
       "commit": "b3f1f2d401943a88d606ad3e90b494eae1b64b42",
-      "effective_rule_count": 79,
+      "effective_rule_count": 58,
       "extraction": {},
       "id": "missuo",
       "license": "MIT",
@@ -2370,7 +2351,7 @@
     },
     {
       "commit": "0dff7831cdebc155ef57998fcd88ed20d977f788",
-      "effective_rule_count": 39,
+      "effective_rule_count": 36,
       "extraction": {},
       "id": "accademia",
       "license": "MIT",

@@ -31,6 +31,102 @@
     {
       "domain": "3gppnetwork.org",
       "reason": "Shared/global infrastructure namespace: do not automatically proxy this root or its descendants from banking feeds; use explicit supplemental evidence if needed"
+    },
+    {
+      "domain": "authorize.net",
+      "reason": "Payment gateway, not a bank namespace"
+    },
+    {
+      "domain": "bill.com",
+      "reason": "Business payments platform, not a bank namespace"
+    },
+    {
+      "domain": "braintreepayments.com",
+      "reason": "Payment processor, not a bank namespace"
+    },
+    {
+      "domain": "cash.app",
+      "reason": "Consumer payment app, not a bank namespace"
+    },
+    {
+      "domain": "cashedge.com",
+      "reason": "Account aggregation/transfer service, not a bank namespace"
+    },
+    {
+      "domain": "checkfreeweb.com",
+      "reason": "Bill payment service, not a bank namespace"
+    },
+    {
+      "domain": "chasepaymentech.com",
+      "reason": "Merchant payment processing, not a bank namespace"
+    },
+    {
+      "domain": "dwolla.com",
+      "reason": "Payment network, not a bank namespace"
+    },
+    {
+      "domain": "equifax.com",
+      "reason": "Credit bureau, not a bank namespace"
+    },
+    {
+      "domain": "iesnare.com",
+      "reason": "Fraud/risk service shared by many sites, not a bank namespace"
+    },
+    {
+      "domain": "payoneer.com",
+      "reason": "Payments platform, not a bank namespace"
+    },
+    {
+      "domain": "paypal.com",
+      "reason": "Payment platform, not a bank namespace"
+    },
+    {
+      "domain": "plaid.com",
+      "reason": "Account-linking aggregator, not a bank namespace"
+    },
+    {
+      "domain": "popmoney.com",
+      "reason": "Person-to-person payment service, not a bank namespace"
+    },
+    {
+      "domain": "sezzle.com",
+      "reason": "Buy-now-pay-later service, not a bank namespace"
+    },
+    {
+      "domain": "square.com",
+      "reason": "Merchant/payment platform, not a bank namespace"
+    },
+    {
+      "domain": "squareup.com",
+      "reason": "Merchant/payment platform, not a bank namespace"
+    },
+    {
+      "domain": "stripe.com",
+      "reason": "Payment processor, not a bank namespace"
+    },
+    {
+      "domain": "trydave.com",
+      "reason": "Fintech service, not a bank namespace"
+    },
+    {
+      "domain": "venmo.com",
+      "reason": "Payment app, not a bank namespace"
+    },
+    {
+      "domain": "wepay.com",
+      "reason": "Payment platform, not a bank namespace"
+    },
+    {
+      "domain": "wise.com",
+      "reason": "Money-transfer service, not a bank namespace"
+    },
+    {
+      "domain": "xoom.com",
+      "reason": "Money-transfer service, not a bank namespace"
+    },
+    {
+      "domain": "zellepay.com",
+      "reason": "Payment network, not a bank namespace"
     }
   ],
   "excluded": [
@@ -130,5 +226,5 @@
       "rule": "DOMAIN-SUFFIX,aexp.com"
     }
   ],
-  "version": 5
+  "version": 6
 }
