@@ -33,6 +33,10 @@
       "reason": "Shared/global infrastructure namespace: do not automatically proxy this root or its descendants from banking feeds; use explicit supplemental evidence if needed"
     },
     {
+      "domain": "amextravel.com",
+      "reason": "Travel portal, not a deposit, card or online-banking entry"
+    },
+    {
       "domain": "authorize.net",
       "reason": "Payment gateway, not a bank namespace"
     },
@@ -43,6 +47,18 @@
     {
       "domain": "braintreepayments.com",
       "reason": "Payment processor, not a bank namespace"
+    },
+    {
+      "domain": "bac.com",
+      "reason": "Corporate/investment namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "baml.com",
+      "reason": "Investment-banking namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "bnymellon.com",
+      "reason": "Institutional custody/asset-management namespace, not a deposit, card or online-banking entry"
     },
     {
       "domain": "cash.app",
@@ -57,6 +73,10 @@
       "reason": "Bill payment service, not a bank namespace"
     },
     {
+      "domain": "citigroup.com",
+      "reason": "Corporate/investment namespace, not a deposit, card or online-banking entry"
+    },
+    {
       "domain": "chasepaymentech.com",
       "reason": "Merchant payment processing, not a bank namespace"
     },
@@ -65,12 +85,44 @@
       "reason": "Payment network, not a bank namespace"
     },
     {
+      "domain": "discoverpersonalloans.com",
+      "reason": "Loan product, outside deposit, card and online-banking scope"
+    },
+    {
       "domain": "equifax.com",
       "reason": "Credit bureau, not a bank namespace"
     },
     {
+      "domain": "gobankrewards.com",
+      "reason": "Rewards service, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "goldmansachs.com",
+      "reason": "Investment/wealth namespace, not a deposit, card or online-banking entry"
+    },
+    {
       "domain": "iesnare.com",
       "reason": "Fraud/risk service shared by many sites, not a bank namespace"
+    },
+    {
+      "domain": "jpmorgan.com",
+      "reason": "Corporate/investment namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "merrilledge.com",
+      "reason": "Brokerage namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "ml.com",
+      "reason": "Investment/wealth namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "morganstanley.com",
+      "reason": "Brokerage/wealth namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "northerntrust.com",
+      "reason": "Institutional custody/wealth namespace, not a deposit, card or online-banking entry"
     },
     {
       "domain": "payoneer.com",
@@ -91,6 +143,18 @@
     {
       "domain": "sezzle.com",
       "reason": "Buy-now-pay-later service, not a bank namespace"
+    },
+    {
+      "domain": "schwab.com",
+      "reason": "Brokerage/wealth namespace, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "serve.com",
+      "reason": "Prepaid/payment service, not a deposit, card or online-banking entry"
+    },
+    {
+      "domain": "statestreet.com",
+      "reason": "Institutional asset-management namespace, not a deposit, card or online-banking entry"
     },
     {
       "domain": "square.com",
@@ -115,6 +179,10 @@
     {
       "domain": "wepay.com",
       "reason": "Payment platform, not a bank namespace"
+    },
+    {
+      "domain": "wellsfargoadvisors.com",
+      "reason": "Brokerage/wealth namespace, not a deposit, card or online-banking entry"
     },
     {
       "domain": "wise.com",
