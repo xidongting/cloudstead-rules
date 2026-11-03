@@ -6,7 +6,7 @@
 
 - 原有七家机构的登录、别名、卡片、资产域与历史迁移域，不再只收录官网根域。
 - US Bank、PNC、Truist、TD、Marcus/Goldman Sachs、Ally、Fifth Third、Citizens、KeyBank、Regions、Huntington、M&T、USAA、BMO、SoFi、Synchrony、Cathay、Varo、Velo、Dave、Northern Trust、Santander、Comerica、Zions 等上游命名空间。
-- 银行相关投资、支付、转账、账户关联与信用服务，包括 Merrill、Schwab、Plaid、Zelle、CheckFree、CashEdge、Equifax、Wise、PayPal 等。范围不再局限于“七家银行官网”。
+- 历史广覆盖还包含投资、支付、转账、账户关联与信用服务，如 Merrill、Schwab、Plaid、Zelle、CheckFree、CashEdge、Equifax、Wise。当前并非纯银行名单；本次仅移出下述 PayPal 组，其余非银行服务尚未逐项收窄。
 
 `policy.json` 保存来源范围、排除/更正及补充理由，不复制上游全量批准名单。每条实际摄取规则的来源和过滤影响由对应 manifest 记录。社区提供的域名是覆盖候选证据，不是已经实测每个 App、确认所有权或当前服务可用性的保证；历史域不代表服务仍开放。
 
@@ -28,6 +28,9 @@
 
 ## 仍明确排除
 
+- 按用户指令，从 `us-bank` 排除 `paypal.com`、`braintreepayments.com`、`venmo.com`、`xoom.com` 四个后缀及其子域。指令保存在 `ruleset/overrides.json`，优先于上游和本地补充，合一版 `us-residential` 继承排除结果。这是路由分类选择，不是 PayPal 组无需风控或银行必须家宽的结论。未宣称排除了该集团所有未来或未知域名。
+- 产物用逻辑排除保留原始候选及来源；上述字符串可能仍出现在 JSON／manifest 中，是否命中以 `effective_rules` 和编译产物实际匹配为准。`rule_count`／`domain_count` 是正向候选计数，不因负向排除直接减四。
+
 - 以银行名做任意子串的关键词：可能命中相似、无关或恶意域名。已有银行域使用精确/后缀规则。
 - 无关联证据的 AutoNavi、eBay 等一般服务。
 - 所有权/现状不清的历史金融域：保留排除理由，不能为凑数量无限收录。
@@ -35,6 +38,10 @@
 - 上游进程名：SRS 域名集合不冒充跨平台 App 进程规则。
 
 无 IP 全量列表、公共 CDN 根域、全球 GEOIP 或包罗所有“bank”字符串的兜底。这类匹配扩大不等于覆盖正确。
+
+## 家宽是用户路由策略，不是银行普遍准入要求
+
+本集合面向美国银行业务的分类与审计，不能用来推断银行要求某种 IP 类型。[Capital One 官方安全建议](https://www.capitalone.com/learn-grow/privacy-security/protect-against-credit-card-fraud/)提到公共 Wi-Fi 下可考虑 VPN 或个人热点；[Chase 官方安全建议](https://www.chase.com/digital/resources/privacy-security/security/cybersecurity)也提到 VPN 可增加保护。它们不是任意代理都能正常使用的保证，但不支持“所有银行都必须住宅 IP”的断言。固定出口不能代替身份、设备、所在地与交易验证。
 
 ## 零漏流要求：必须用隔离的全量出口模式
 

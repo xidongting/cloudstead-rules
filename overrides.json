@@ -1,5 +1,42 @@
 {
   "version": 1,
-  "directives": [],
+  "directives": [
+    {
+      "id": "exclude-paypal-from-bank",
+      "scope": "us-bank",
+      "action": "exclude",
+      "rule": "DOMAIN-SUFFIX,paypal.com",
+      "basis_type": "user-instruction",
+      "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "exclude-braintree-from-bank",
+      "scope": "us-bank",
+      "action": "exclude",
+      "rule": "DOMAIN-SUFFIX,braintreepayments.com",
+      "basis_type": "user-instruction",
+      "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "exclude-venmo-from-bank",
+      "scope": "us-bank",
+      "action": "exclude",
+      "rule": "DOMAIN-SUFFIX,venmo.com",
+      "basis_type": "user-instruction",
+      "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "exclude-xoom-from-bank",
+      "scope": "us-bank",
+      "action": "exclude",
+      "rule": "DOMAIN-SUFFIX,xoom.com",
+      "basis_type": "user-instruction",
+      "reason": "Keep PayPal-group payment services outside US-bank routing; not a residential-IP requirement claim.",
+      "date": "2026-11-03"
+    }
+  ],
   "observations": []
 }
