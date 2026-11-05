@@ -6,7 +6,7 @@
 
 - 原有七家机构的登录、别名、卡片、资产域与历史迁移域，不再只收录官网根域。
 - US Bank、PNC、Truist、TD、Marcus/Goldman Sachs、Ally、Fifth Third、Citizens、KeyBank、Regions、Huntington、M&T、USAA、BMO、SoFi、Synchrony、Cathay、Varo、Velo、Dave、Northern Trust、Santander、Comerica、Zions 等上游命名空间。
-- 当前集合严格保留存款、信用卡、消费者/企业网银入口及其必要的银行品牌域名。支付、转账、账户聚合、账单支付、信用评估、风控、商户基础设施、投资、券商、财富管理、托管和资产管理不属于本集合；明确排除项见 `policy.json` 的 `blocked_suffixes`。银行根域只有在承载上述银行入口时保留，不能据此声称覆盖其所有金融业务。
+- 当前集合按“选定实体”组织，而不是按业务类型组织。选定银行/银行集团的官网、登录、卡片、存款、贷款、投资、奖励、资源和其他已核实关联域可以一起纳入，避免同一实体会话被拆到不同出口。支付、转账、账户聚合、账单支付、征信、风控和商户基础设施等共享第三方命名空间仍不自动纳入。
 
 `policy.json` 保存来源范围、排除/更正及补充理由，不复制上游全量批准名单。每条实际摄取规则的来源和过滤影响由对应 manifest 记录。社区提供的域名是覆盖候选证据，不是已经实测每个 App、确认所有权或当前服务可用性的保证；历史域不代表服务仍开放。
 
@@ -28,8 +28,9 @@
 
 ## 仍明确排除
 
-- `policy.json` 通过 `blocked_suffixes` 排除支付、转账、账户聚合、账单支付、信用评估、风控、商户基础设施以及投资/财富管理命名空间，包括 PayPal、Braintree、Venmo、Xoom、Plaid、Zelle、Wise、Stripe、Square、Equifax、Schwab、Merrill、Morgan Stanley、State Street 等。它们保留在来源排除记录中，不进入最终有效银行规则；合一版 `us-residential` 继承过滤结果。
-- 这是路由分类边界，不是这些服务无需风控或银行必须家宽的结论。新域名只有在确认是存款、信用卡或网银入口后才进入 `us-bank`；投资类服务应使用普通稳定出口或另行分类。
+- 选定实体包括 Capital One、Chase/JPMorgan、Bank of America/Merrill、Citi、Wells Fargo、U.S. Bank、PNC、Truist、TD、Ally、Fifth Third、Citizens、KeyBank、Regions、Huntington、M&T、USAA、BMO、SoFi、Synchrony、Discover、American Express、Marcus/Goldman Sachs、East West、HSBC US、Santander、Comerica、Zions、Varo、Velo 等；实体域仍需有来源或归属证据。
+- `policy.json` 的 `blocked_suffixes` 主要排除未选中的独立金融实体（如 Schwab、Morgan Stanley、State Street、Northern Trust）及共享支付/聚合基础设施（如 PayPal、Plaid、Zelle、Stripe）。合一版 `us-residential` 继承过滤结果。
+- 这是路由分类边界，不是任何服务官方要求家宽的结论。新域名按实体归属审核，不按“投资/贷款/奖励”等业务标签自动删除。
 
 - 以银行名做任意子串的关键词：可能命中相似、无关或恶意域名。已有银行域使用精确/后缀规则。
 - 无关联证据的 AutoNavi、eBay 等一般服务。
